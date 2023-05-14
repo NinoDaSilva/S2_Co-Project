@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <header>
-        <div class="w-[1920px] h-[104px] relative">
+    <header class="w-[1920px] h-[104px] relative mx-auto">
+        
         <div class="w-[1920px] h-[104px] absolute left-[-1px] top-[-1px] opacity-75 bg-neutral-50"></div>
-        <img src="logo.png" class="w-[66px] h-[81px] absolute left-[41px] top-3 object-cover" />
+        <img src="logo.png" class="w-auto h-[81px] absolute left-[41px] top-3 object-cover" />
         <a href="#" class="w-[205px] absolute left-[158px] top-[33px] text-[28px] font-semibold text-left text-[#413b3b]">
             Nos partenaires
         </a>
@@ -23,6 +23,6 @@
         <a href="#" class="w-[145px] absolute left-[1738px] top-[33px] text-[28px] font-semibold text-left text-[#413b3b]">
             Connexion
         </a>
-        </div>
+        
     </header>   
 </template>
