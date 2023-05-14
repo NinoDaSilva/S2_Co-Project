@@ -1,19 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{html,vue,js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      indigo: '#1d096b',
-      pink: '#feaa9b',
-      white: '#ffffff',
+      current: 'currentColor',
+      white: '#fafafa',
       black: '#000000',
       transparent: 'transparent',
       gray: colors.zinc
     },
     fontFamily: {
-      sans: ['Mulish', 'sans-serif'],
-      serif: ['Space Mono', 'monospace']
+      specific: ['Mochiy Pop One', 'sans-serif'],
+      Subheading: ['Montserrat', 'sans-serif'],
+      primary: ['Nunito', 'sans-serif'],
+      secondary: ['Oxygen', 'sans-serif'],
+      title: ['Raleway', 'sans-serif'],
     },
     extend: {
       gridTemplateColumns: {
