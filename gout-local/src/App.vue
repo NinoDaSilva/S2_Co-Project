@@ -5,6 +5,6 @@ import FooterPage from './components/FooterPage.vue'
 
 <template>
   <HeaderPage/>
-  <h1 class="font-serif text-4xl">Goût local</h1>
+  <h1 class="text-center">Goût local</h1>
   <FooterPage/>
 </template>
