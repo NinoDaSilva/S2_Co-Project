@@ -1,24 +1,26 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
+//import { PanierIcon } from "@/components/icons/PanierIcon.vue";
+//import { GoutLocalLogo } from "@/components/icons/GoutLocalLogo.vue";
 </script>
 
 <template>
     <header class="bg-opacity-75 bg-neutral-50">
-        <nav class="">
+        <nav class="flex">
+            <GoutLocalLogo />
             <ul class="flex font-primary font-semibold text-lg">
                 <li class="flex"> 
-                    <img src="logo.png" class="" />
-                    <RouterLink to="/pages/Produits" class="">
+                    <RouterLink to="/pages/produits" class="">
                         Nos produits
                     </RouterLink>
                 </li>
                 <li class="flex">
-                    <RouterLink to="/pages/Recettes" class="">
+                    <RouterLink to="/pages/recettes" class="">
                         Nos recettes
                     </RouterLink>
                 </li>
                 <li class="flex">
-                    <RouterLink to="/pages/Conseils" class="">
+                    <RouterLink to="/pages/conseils" class="">
                         Nos conseils
                     </RouterLink>
                 </li>
@@ -28,13 +30,17 @@ import { RouterLink } from "vue-router";
                     </RouterLink>
                 </li>
                 <li class="flex">
-                    <RouterLink to="/pages/Partenaires" class="">
+                    <RouterLink to="/pages/partenaires" class="">
                         Nos partenaires
                     </RouterLink>
                 </li>
                 <li class="flex">
-                    <img src="panier.png" class="" />
-                    <RouterLink to="/pages/Connexion" class="">
+                    <RouterLink to="/pages/panier" class="">
+                        <PanierIcon />
+                    </RouterLink>
+                </li>
+                <li class="flex">
+                    <RouterLink to="/pages/connexion" class="">
                         Connexion
                     </RouterLink>
                 </li>
