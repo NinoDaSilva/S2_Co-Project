@@ -1,27 +1,44 @@
 <script setup lang="ts">
-
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
-    <header class="relative mx-auto">
-        
-        <img src="logo.png" class="w-auto h-[81px] absolute left-[41px] top-3 object-cover" />
-        <a href="#" class="w-[205px] absolute left-[158px] top-[33px] text-[28px] font-semibold text-left text-[#413b3b]">
-            Nos partenaires
-        </a>
-        <a href="#" class="w-40 absolute left-[403px] top-[33px] text-[28px] font-semibold text-left text-[#413b3b]">
-            Nos recettes
-        </a>
-        <a href="#" class="absolute left-[603px] top-[33px] text-[28px] font-semibold text-left text-[#413b3b]">
-            Nos conseils
-        </a>
-        <a href="#" class="w-[165px] absolute left-[803px] top-[33px] text-[28px] font-semibold text-left text-[#413b3b]">
-            Évènements
-        </a>
-        <img src="panier.png" class="w-[30px] h-[30px] absolute left-[1657px] top-9 object-cover" />
-        <a href="#" class="w-[145px] absolute left-[1738px] top-[33px] text-[28px] font-semibold text-left text-[#413b3b]">
-            Connexion
-        </a>
-        
+    <header class="bg-opacity-75 bg-neutral-50">
+        <nav class="">
+            <ul class="flex font-primary font-semibold text-lg">
+                <li class="flex"> 
+                    <img src="logo.png" class="" />
+                    <RouterLink to="/pages/Produits" class="">
+                        Nos produits
+                    </RouterLink>
+                </li>
+                <li class="flex">
+                    <RouterLink to="/pages/Recettes" class="">
+                        Nos recettes
+                    </RouterLink>
+                </li>
+                <li class="flex">
+                    <RouterLink to="/pages/Conseils" class="">
+                        Nos conseils
+                    </RouterLink>
+                </li>
+                <li class="flex">
+                    <RouterLink to="/pages/events" class="">
+                        Évènements
+                    </RouterLink>
+                </li>
+                <li class="flex">
+                    <RouterLink to="/pages/Partenaires" class="">
+                        Nos partenaires
+                    </RouterLink>
+                </li>
+                <li class="flex">
+                    <img src="panier.png" class="" />
+                    <RouterLink to="/pages/Connexion" class="">
+                        Connexion
+                    </RouterLink>
+                </li>
+            </ul>
+        </nav>
     </header>   
 </template>
