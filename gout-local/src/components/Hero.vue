@@ -3,8 +3,8 @@ defineProps<{
     title: string;
     imgPath: string;
     imgAlt: string;
-    imgSndPath: string;
-    imgSndAlt: string;
+    imgSndPath?: string;
+    imgSndAlt?: string;
 }>();
 </script>
 
@@ -16,7 +16,7 @@ defineProps<{
         </div>
 
         <div>
-            <slot name="button"></slot>
+            <slot name="elt"></slot>
         </div>
 
         <img :src="imgPath" :alt="imgAlt" />
