@@ -1,7 +1,5 @@
 <template>
-  <div class="about">
-    <h1>En savoir plus</h1>
-  </div>
+  <h1>Page contact</h1>
 </template>
 
 <style>
