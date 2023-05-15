@@ -12,8 +12,13 @@ defineProps<{
     <div>
         <div>
             <h1>{{ title }}</h1>
-            <img :src="imgSndPath" :alt="imgSndAlt" />
+            <img v-if="imgSndAlt, imgSndPath" :src="imgSndPath" :alt="imgSndAlt" />
         </div>
+
+        <div>
+            <slot name="button"></slot>
+        </div>
+
         <img :src="imgPath" :alt="imgAlt" />
     </div>
 </template>
