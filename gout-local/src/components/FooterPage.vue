@@ -1,5 +1,8 @@
 <script setup lang="ts">
-
+import { RouterLink } from "vue-router";
+//import { FacebookIcon } from "@/components/icons/FacebookIcon.vue";
+//import { TwitterIcon } from "@/components/icons/TwitterIcon.vue";
+//import { InstagramIcon } from "@/components/icons/InstagramIcon.vue";
 </script>
 
 <template>
