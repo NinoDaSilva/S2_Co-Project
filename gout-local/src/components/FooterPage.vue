@@ -16,19 +16,19 @@ import { RouterLink } from "vue-router";
                 <li>
                     <a href="https://facebook.com" aria-label="facebook">
                         <FacebookIcon />
-                        <label class="sm:hidden">Facebook</label>
+                        <label class="max-sm:hidden">Facebook</label>
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com" aria-label="twitter">
                         <TwitterIcon />
-                        <label class="sm:hidden">Twitter</label>
+                        <label class="max-sm:hidden">Twitter</label>
                     </a>
                 </li>
                 <li>
                     <a href="https://instagram.com" aria-label="instagram">
                         <InstagramIcon />
-                        <label class="sm:hidden">Instagram</label>
+                        <label class="max-sm:hidden">Instagram</label>
                     </a>
                 </li>
             </ul>
