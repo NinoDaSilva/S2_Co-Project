@@ -7,8 +7,8 @@ import FooterPage from './components/FooterPage.vue'
 <template>
   <HeaderPage/>
   <main class="">
-    <h1 class="text-center text-red-500">Goût local</h1>
-    <RouterView />
+    <h1 class="text-center">Goût local</h1>
+    <RouterView/>
   </main>
   <FooterPage/>
 </template>
