@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-    <footer class="bg-lime-200">
+    <footer class="bg-[#ebebeb]">
 
         <div class=""></div>
 
