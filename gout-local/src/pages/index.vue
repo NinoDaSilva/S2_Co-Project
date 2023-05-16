@@ -1,9 +1,22 @@
 <script setup lang="ts">
-
+import Hero from "@/components/Hero.vue";
 </script>
 
 <template>
+  <Hero
+    title="Découvrez nos produits 100% locaux !"
+    imgPath=""
+    imgAlt="Image bannière page d'accueil"
+  >
+  <template>
+    <div>
+    
+    </div>
+  </template>
+  </Hero>
+
   <main>
-    <h1 class="text-red-500">Page d'accueil</h1>
+    <h1>Page d'accueil</h1>
   </main>
+
 </template>

@@ -1,14 +1,14 @@
 <script setup lang="ts">
-	import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router';
+import HeaderPage from './components/HeaderPage.vue'
+import FooterPage from './components/FooterPage.vue'
 </script>
 
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
-    </nav>
-  </header>
-
-  <RouterView />
+  <HeaderPage/>
+  <main class="">
+    <h1 class="text-center text-red-500">Goût local</h1>
+    <RouterView />
+  </main>
+  <FooterPage/>
 </template>
