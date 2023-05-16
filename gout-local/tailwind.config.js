@@ -5,7 +5,7 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    "colors": {
+    colors: {
       blanc: "#fafafa",
       brun: "#413b3b",
       vert: "#6ac25e",
