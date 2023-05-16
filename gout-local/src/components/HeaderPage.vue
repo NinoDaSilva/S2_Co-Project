@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
 
+//import { PanierIcon } from "@/components/icons/PanierIcon.vue";
+//import { GoutLocalLogo } from "@/components/icons/GoutLocalLogo.vue";
+
 import { ref, computed, watch } from 'vue';
 const menuIsOpen = ref(false);
 function closeMenu() {
 	  menuIsOpen.value = false
 	}
 
-//import { PanierIcon } from "@/components/icons/PanierIcon.vue";
-//import { GoutLocalLogo } from "@/components/icons/GoutLocalLogo.vue";
 </script>
 
 <template>
