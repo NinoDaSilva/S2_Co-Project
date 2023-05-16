@@ -23,6 +23,20 @@ module.exports = {
       secondary: ['Oxygen', 'sans-serif'],
       title: ['Raleway', 'sans-serif'],
     },
+    fontSize: {
+      '4xs': '0.875rem', //14px
+      '3xs': '0.9375rem', //15px
+      '2xs': '1rem', //16px
+      'xs': '1.125rem', //18px
+      'sm': '1.25rem', //20px
+      'base': '1.375rem', //22px
+      'lg': '1.5rem', //24px
+      'xl': '1.5625rem', //25px
+      '2xl': '1.875rem', //30px
+      '3xl': '2.375rem', //38px
+      '4xl': '2.5rem', //40px
+      '5xl': '5rem' //80px
+    },
     extend: {
       gridTemplateColumns: {
         principal: 'repeat(12, minmax(0, 64px))'
