@@ -6,49 +6,48 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-    <footer class="bg-[#ebebeb]">
+    <footer class="bg-[#ebebeb] font-secondary">
 
-        <div class=""></div>
+        <div class="w-full h-1 bg-bleuTurquoise"></div>
 
-        <div>
-            <h2 class="">Réseaux sociaux</h2>
-            <ul>
+        <div class="flex justify-between">
+            <div>
+                <h2 class="font-bold">Réseaux sociaux</h2>
+                <ul class="">
+                    <li>
+                        <a href="https://facebook.com" aria-label="facebook">
+                            <FacebookIcon />
+                            <label class="max-sm:hidden">Facebook</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" aria-label="twitter">
+                            <TwitterIcon />
+                            <label class="max-sm:hidden">Twitter</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" aria-label="instagram">
+                            <InstagramIcon />
+                            <label class="max-sm:hidden">Instagram</label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class=""></div>
+            <ul class="font-bold">
                 <li>
-                    <a href="https://facebook.com" aria-label="facebook">
-                        <FacebookIcon />
-                        <label class="max-sm:hidden">Facebook</label>
-                    </a>
+                    <RouterLink to="/pages/mentions" class="">Mentions légales</RouterLink>
                 </li>
                 <li>
-                    <a href="https://twitter.com" aria-label="twitter">
-                        <TwitterIcon />
-                        <label class="max-sm:hidden">Twitter</label>
-                    </a>
+                    <RouterLink to="/pages/about" class="">En savoir plus</RouterLink>
                 </li>
                 <li>
-                    <a href="https://instagram.com" aria-label="instagram">
-                        <InstagramIcon />
-                        <label class="max-sm:hidden">Instagram</label>
-                    </a>
+                    <RouterLink to="/pages/contact" class="">Contact</RouterLink>
                 </li>
             </ul>
+            <div class=""></div>
         </div>
-
-        <div class=""></div>
-
-        <ul>
-            <li>
-                <RouterLink to="/pages/mentions" class="">Mentions légales</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/pages/about" class="">En savoir plus</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/pages/contact" class="">Contact</RouterLink>
-            </li>
-        </ul>
-
-        <div class=""></div>
 
     </footer>   
 </template>
