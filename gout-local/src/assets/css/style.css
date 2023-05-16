@@ -13,3 +13,9 @@
     background-color: #fafafa;
   }
 }
+
+@layer components {
+  .menu-link {
+    @apply block px-4 py-4;
+  }
+}

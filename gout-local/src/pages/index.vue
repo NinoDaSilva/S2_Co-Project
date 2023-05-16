@@ -3,7 +3,7 @@ import Hero from "@/components/Hero.vue";
 </script>
 
 <template>
-  <Hero
+  <Hero class="z-0"
     title="Découvrez nos produits 100% locaux !"
     imgPath=""
     imgAlt="Image bannière page d'accueil"
