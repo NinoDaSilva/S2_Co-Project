@@ -39,12 +39,12 @@ import { RouterLink } from "vue-router";
                         <PanierIcon />
                     </RouterLink>
                 </li>
-                <li class="flex">
-                    <RouterLink to="/pages/connexion" class="">
-                        Connexion
-                    </RouterLink>
-                </li>
             </ul>
+            <span class="flex justify-self-end">
+                <RouterLink to="/pages/connexion">
+                    Connexion
+                </RouterLink>
+            </span>
         </nav>
     </header>   
 </template>
