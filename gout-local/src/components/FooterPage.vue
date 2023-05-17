@@ -10,26 +10,26 @@ import InstagramIcon from "@/components/icons/InstagramIcon.vue";
 
         <div class="w-full h-1 bg-bleuTurquoise"></div>
 
-        <div class="flex justify-between">
+        <div class="flex justify-between p-6">
             <div>
                 <h2 class="font-bold">Réseaux sociaux</h2>
-                <ul class="">
+                <ul class="mt-6">
                     <li>
-                        <a href="https://facebook.com" aria-label="facebook">
+                        <a href="https://facebook.com" aria-label="facebook" class="items-center lg:flex lg:ml-2 mb-5">
                             <FacebookIcon />
-                            <label class="max-sm:hidden">Facebook</label>
+                            <label class="text-xs max-sm:hidden lg:ml-5">Facebook</label>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com" aria-label="twitter">
+                        <a href="https://twitter.com" aria-label="twitter" class="items-center lg:flex lg:ml-2 mb-5">
                             <TwitterIcon />
-                            <label class="max-sm:hidden">Twitter</label>
+                            <label class="text-xs max-sm:hidden lg:ml-5">Twitter</label>
                         </a>
                     </li>
                     <li>
-                        <a href="https://instagram.com" aria-label="instagram">
+                        <a href="https://instagram.com" aria-label="instagram" class="items-center lg:flex lg:ml-2 mb-5">
                             <InstagramIcon />
-                            <label class="max-sm:hidden">Instagram</label>
+                            <label class="text-xs max-sm:hidden lg:ml-5">Instagram</label>
                         </a>
                     </li>
                 </ul>
