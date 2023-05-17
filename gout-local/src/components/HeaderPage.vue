@@ -13,7 +13,7 @@ function closeMenu() {
 </script>
 
 <template>
-    <header class="bg-blanc bg-opacity-80 fixed z-10 flex w-full translate-y-0 items-stretch justify-between px-6 py-2 transition-all duration-300 ease-in-out
+    <header class="bg-blanc bg-opacity-80 fixed z-10 flex w-full translate-y-0 items-stretch justify-between px-6 py-4 transition-all duration-300 ease-in-out
         lg:py-0">
         
         <div class="flex items-center">
@@ -25,20 +25,21 @@ function closeMenu() {
             <button class="relative z-10 flex h-5 w-8 flex-col justify-between lg:hidden"
                 @click="menuIsOpen = !menuIsOpen">
                 <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
-                    :class="{ 'translate-y-[9px] rotate-45 bg-white': menuIsOpen }">
+                    :class="{ 'translate-y-[9px] rotate-45 bg-blanc': menuIsOpen }">
                 </div>
                 <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
-                    :class="{ 'bg-white opacity-0': menuIsOpen }">
+                    :class="{ 'opacity-0': menuIsOpen }">
                 </div>
                 <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
-                    :class="{ '-translate-y-[9px] -rotate-45 bg-white': menuIsOpen }">
+                    :class="{ '-translate-y-[9px] -rotate-45 bg-blanc': menuIsOpen }">
                 </div>
             </button>
         
-            <nav class="invisible opacity-0 fixed inset-0 h-screen w-screen text-center transition-all duration-300 ease-in-out
-                lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100"
+            <nav class="bg-brun invisible opacity-0 fixed inset-0 h-screen w-screen text-center transition-all duration-300 ease-in-out
+                lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:bg-blanc lg:bg-opacity-0"
                 :class="{ '!visible opacity-100': menuIsOpen }">
-                <ul class="font-primary font-semibold text-lg mt-[16vh] lg:m-0 lg:flex">
+                <ul class="font-primary font-semibold text-lg mt-[16vh] lg:m-0 lg:flex"
+                    :class="{'text-blanc': menuIsOpen }">
                     <li> 
                         <RouterLink class="menu-link" to="/pages/produits" 
                             @click="closeMenu">Nos produits</RouterLink>
@@ -66,7 +67,7 @@ function closeMenu() {
 
             <div class="font-primary font-semibold text-lg invisible opacity-0 fixed inset-0 text-center transition-all duration-300 ease-in-out mt-[5vh]
                 lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:mt-[0vh] lg:justify-end"
-                :class="{ '!visible opacity-100': menuIsOpen }">
+                :class="{ '!visible opacity-100 text-blanc': menuIsOpen }">
                 <RouterLink class="menu-link" to="/pages/panier"
                         @click="closeMenu"><PanierIcon /></RouterLink>
 
