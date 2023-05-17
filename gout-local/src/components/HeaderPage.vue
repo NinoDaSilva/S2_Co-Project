@@ -13,10 +13,10 @@ function closeMenu() {
 </script>
 
 <template>
-    <header class="bg-blanc bg-opacity-80 fixed z-10 flex w-full translate-y-0 items-stretch justify-between px-6 py-4 transition-all duration-300 ease-in-out
+    <header class="bg-blanc bg-opacity-80 fixed z-10 flex w-full translate-y-0 items-center justify-between px-6 py-4 transition-all duration-300 ease-in-out
         lg:py-0">
         
-        <div class="flex items-center">
+        <div class="mr-8">
             <a href="/">
                 <GoutLocalLogo class="w-[75px] h-[75px]"/>
             </a>
@@ -68,7 +68,7 @@ function closeMenu() {
             <div class="font-primary font-semibold text-lg invisible opacity-0 fixed inset-0 text-center transition-all duration-300 ease-in-out
                 lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:justify-end"
                 :class="{ '!visible opacity-100 text-blanc': menuIsOpen }">
-                <RouterLink class="menu-link" to="/pages/panier"
+                <RouterLink class="menu-link max-md:mt-[2.8vh] max-md:ml-3" to="/pages/panier"
                     @click="closeMenu"><PanierIcon /></RouterLink>
 
                 <RouterLink class="menu-link" to="/pages/connexion"
