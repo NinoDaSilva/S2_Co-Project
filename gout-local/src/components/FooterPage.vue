@@ -8,10 +8,10 @@ import GoutLocalLogo from "./icons/GoutLocalLogo.vue";
 
 <template>
     <footer class="bg-[#ebebeb] font-secondary max-md:text-center">
-
+        
         <div class="w-full h-1 bg-bleuTurquoise"></div>
 
-        <div class="p-6 md:justify-around md:flex">
+        <div class="px-20 p-6 md:justify-around md:flex">
             <div class="max-md:mb-10">
                 <h2 class="font-bold">Réseaux sociaux</h2>
                 <ul class="max-sm:flex mx-sm:px-5 mt-6 justify-between">
@@ -35,7 +35,9 @@ import GoutLocalLogo from "./icons/GoutLocalLogo.vue";
                     </li>
                 </ul>
             </div>
-            <div class=""></div>
+
+            <div class="flex w-0.5 h-64 bg-bleuTurquoise max-sm:hidden"></div>
+
             <ul class="font-bold">
                 <li class="">
                     <RouterLink to="/pages/mentions" class="">Mentions légales</RouterLink>
@@ -47,7 +49,10 @@ import GoutLocalLogo from "./icons/GoutLocalLogo.vue";
                     <RouterLink to="/pages/contact" class="">Contact</RouterLink>
                 </li>
             </ul>
-            <div class=""><GoutLocalLogo class="w-[150px] h-[150px]" /></div>
+
+            <div class="flex w-0.5 h-64 bg-bleuTurquoise max-sm:hidden"></div>
+
+            <div class="items-center my-auto"><GoutLocalLogo class="w-[150px] h-[150px] mx-auto" /></div>
         </div>
 
     </footer>   

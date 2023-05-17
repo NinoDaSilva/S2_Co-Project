@@ -22,58 +22,57 @@ function closeMenu() {
             </a>
         </div>
 
-            <button class="relative z-10 flex h-5 w-8 flex-col justify-between lg:hidden mt-[0.8vh]"
-                @click="menuIsOpen = !menuIsOpen">
-                <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
-                    :class="{ 'translate-y-[9px] rotate-45 bg-blanc': menuIsOpen }">
-                </div>
-                <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
-                    :class="{ 'opacity-0': menuIsOpen }">
-                </div>
-                <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
-                    :class="{ '-translate-y-[9px] -rotate-45 bg-blanc': menuIsOpen }">
-                </div>
-            </button>
-        
-            <nav class="bg-brun invisible opacity-0 fixed inset-0 h-screen w-screen text-center transition-all duration-300 ease-in-out
-                lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:bg-blanc lg:bg-opacity-0"
-                :class="{ '!visible opacity-100': menuIsOpen }">
-                <ul class="font-primary font-semibold text-lg mt-[16vh] lg:m-0 lg:flex"
-                    :class="{'text-blanc': menuIsOpen }">
-                    <li> 
-                        <RouterLink class="menu-link" to="/pages/produits" 
-                            @click="closeMenu">Nos produits</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink class="menu-link" to="/pages/recettes"
-                            @click="closeMenu">Nos recettes</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink class="menu-link" to="/pages/conseils"
-                            @click="closeMenu">Nos conseils</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink class="menu-link" to="/pages/events"
-                            @click="closeMenu">Évènements</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink class="menu-link" to="/pages/partenaires"
-                            @click="closeMenu">Nos partenaires</RouterLink>
-                    </li>
-                </ul>
-                
-            </nav>
-
-
-            <div class="font-primary font-semibold text-lg invisible opacity-0 fixed inset-0 text-center transition-all duration-300 ease-in-out
-                lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:justify-end"
-                :class="{ '!visible opacity-100 text-blanc': menuIsOpen }">
-                <RouterLink class="menu-link max-md:mt-[2.8vh] max-md:ml-3" to="/pages/panier"
-                    @click="closeMenu"><PanierIcon /></RouterLink>
-
-                <RouterLink class="menu-link" to="/pages/connexion"
-                    @click="closeMenu">Connexion</RouterLink>
+        <button class="relative z-10 flex h-5 w-8 flex-col justify-between lg:hidden mt-[0.8vh]"
+            @click="menuIsOpen = !menuIsOpen">
+            <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
+                :class="{ 'translate-y-[9px] rotate-45 bg-blanc': menuIsOpen }">
             </div>
+            <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
+                :class="{ 'opacity-0': menuIsOpen }">
+            </div>
+            <div class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
+                :class="{ '-translate-y-[9px] -rotate-45 bg-blanc': menuIsOpen }">
+            </div>
+        </button>
+        
+        <nav class="bg-brun invisible opacity-0 fixed inset-0 h-screen w-screen text-center transition-all duration-300 ease-in-out
+            lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:bg-blanc lg:bg-opacity-0"
+            :class="{ '!visible opacity-100': menuIsOpen }">
+            <ul class="font-primary font-semibold text-lg mt-[16vh] lg:m-0 lg:flex"
+                :class="{'text-blanc': menuIsOpen }">
+                <li> 
+                    <RouterLink class="menu-link" to="/pages/produits" 
+                        @click="closeMenu">Nos produits</RouterLink>
+                </li>
+                <li>
+                    <RouterLink class="menu-link" to="/pages/recettes"
+                        @click="closeMenu">Nos recettes</RouterLink>
+                </li>
+                <li>
+                    <RouterLink class="menu-link" to="/pages/conseils"
+                        @click="closeMenu">Nos conseils</RouterLink>
+                </li>
+                <li>
+                    <RouterLink class="menu-link" to="/pages/events"
+                        @click="closeMenu">Évènements</RouterLink>
+                </li>
+                <li>
+                    <RouterLink class="menu-link" to="/pages/partenaires"
+                        @click="closeMenu">Nos partenaires</RouterLink>
+                </li>
+            </ul>            
+        </nav>
+
+
+        <div class="font-primary font-semibold text-lg invisible opacity-0 fixed inset-0 text-center transition-all duration-300 ease-in-out
+            lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:justify-end"
+            :class="{ '!visible opacity-100 text-blanc': menuIsOpen }">
+            <RouterLink class="menu-link max-lg:mt-[2.8vh] max-lg:ml-3" to="/pages/panier"
+                @click="closeMenu"><PanierIcon /></RouterLink>
+
+            <RouterLink class="menu-link" to="/pages/connexion"
+                @click="closeMenu">Connexion</RouterLink>
+        </div>
 
     </header>   
 </template>
