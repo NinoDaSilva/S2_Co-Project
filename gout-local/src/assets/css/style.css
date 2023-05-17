@@ -16,6 +16,9 @@
 
 @layer components {
   .menu-link {
-    @apply block px-4 py-4;
+    @apply block px-4 py-4 hover:text-vert duration-200;
+  }
+  .link {
+    @apply hover:bg-vert duration-200;
   }
 }

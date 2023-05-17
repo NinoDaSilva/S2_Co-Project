@@ -17,7 +17,7 @@ function closeMenu() {
         text-sm xl:text-lg lg:py-0">
         
         <div class="mr-8">
-            <a href="/">
+            <a href="/index.vue">
                 <GoutLocalLogo class="w-[75px] h-[75px]"/>
             </a>
         </div>
@@ -68,7 +68,7 @@ function closeMenu() {
             lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:justify-end"
             :class="{ '!visible opacity-100 text-blanc': menuIsOpen }">
             <RouterLink class="menu-link max-lg:mt-[2.8vh] max-lg:ml-3" to="/pages/panier"
-                @click="closeMenu"><PanierIcon /></RouterLink>
+                @click="closeMenu"><PanierIcon class="link"/></RouterLink>
 
             <RouterLink class="menu-link" to="/pages/connexion"
                 @click="closeMenu">Connexion</RouterLink>
