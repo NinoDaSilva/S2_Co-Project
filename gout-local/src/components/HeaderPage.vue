@@ -14,7 +14,7 @@ function closeMenu() {
 
 <template>
     <header class="bg-blanc bg-opacity-80 fixed z-10 flex w-full translate-y-0 items-center justify-between px-6 py-4 transition-all duration-300 ease-in-out
-        lg:py-0">
+        text-sm xl:text-lg lg:py-0">
         
         <div class="mr-8">
             <a href="/">
@@ -38,7 +38,7 @@ function closeMenu() {
         <nav class="bg-brun invisible opacity-0 fixed inset-0 h-screen w-screen text-center transition-all duration-300 ease-in-out
             lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:bg-blanc lg:bg-opacity-0"
             :class="{ '!visible opacity-100': menuIsOpen }">
-            <ul class="font-primary font-semibold text-lg mt-[16vh] lg:m-0 lg:flex"
+            <ul class="font-primary font-semibold mt-[16vh] lg:m-0 lg:flex"
                 :class="{'text-blanc': menuIsOpen }">
                 <li> 
                     <RouterLink class="menu-link" to="/pages/produits" 
@@ -64,7 +64,7 @@ function closeMenu() {
         </nav>
 
 
-        <div class="font-primary font-semibold text-lg invisible opacity-0 fixed inset-0 text-center transition-all duration-300 ease-in-out
+        <div class="font-primary font-semibold invisible opacity-0 fixed inset-0 text-center transition-all duration-300 ease-in-out
             lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:justify-end"
             :class="{ '!visible opacity-100 text-blanc': menuIsOpen }">
             <RouterLink class="menu-link max-lg:mt-[2.8vh] max-lg:ml-3" to="/pages/panier"

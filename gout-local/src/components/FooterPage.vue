@@ -7,7 +7,7 @@ import GoutLocalLogo from "./icons/GoutLocalLogo.vue";
 </script>
 
 <template>
-    <footer class="bg-[#ebebeb] font-secondary max-md:text-center">
+    <footer class="bg-[#ebebeb] font-secondary text-sm lg:text-base max-md:text-center">
         
         <div class="w-full h-1 bg-bleuTurquoise"></div>
 
