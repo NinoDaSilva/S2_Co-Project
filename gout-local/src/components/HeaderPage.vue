@@ -2,7 +2,7 @@
 import { RouterLink } from "vue-router";
 
 import PanierIcon from "@/components/icons/PanierIcon.vue";
-//import GoutLocalLogo from "@/components/icons/GoutLocalLogo.vue";
+import GoutLocalLogo from "@/components/icons/GoutLocalLogo.vue";
 
 import { ref, computed, watch } from 'vue';
 const menuIsOpen = ref(false);
@@ -18,7 +18,7 @@ function closeMenu() {
         
         <div class="flex items-center">
             <a href="/">
-                <GoutLocalLogo />
+                <GoutLocalLogo class="w-[75px] h-[75px]"/>
             </a>
         </div>
 
