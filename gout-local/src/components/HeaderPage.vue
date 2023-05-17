@@ -68,7 +68,7 @@ function closeMenu() {
             lg:visible lg:relative lg:flex lg:h-auto lg:items-center lg:tracking-wide lg:opacity-100 lg:justify-end"
             :class="{ '!visible opacity-100 text-blanc': menuIsOpen }">
             <RouterLink class="menu-link max-lg:mt-[2.8vh] max-lg:ml-3" to="/pages/panier"
-                @click="closeMenu"><PanierIcon class="link"/></RouterLink>
+                @click="closeMenu"><PanierIcon/></RouterLink>
 
             <RouterLink class="menu-link" to="/pages/connexion"
                 @click="closeMenu">Connexion</RouterLink>

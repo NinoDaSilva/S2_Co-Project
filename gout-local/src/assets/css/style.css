@@ -19,6 +19,9 @@
     @apply block px-4 py-4 hover:text-vert duration-200;
   }
   .link {
-    @apply hover:bg-vert duration-200;
+    @apply hover:text-vert duration-200;
+  }
+  .social-link {
+    @apply text-xs max-sm:hidden sm:ml-5 hover:text-vert duration-200;
   }
 }

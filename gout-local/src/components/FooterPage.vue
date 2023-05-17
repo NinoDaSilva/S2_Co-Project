@@ -22,19 +22,19 @@ import GoutLocalLogo from "./icons/GoutLocalLogo.vue";
                         <li>
                             <a href="https://facebook.com" aria-label="facebook" class="items-center max-md:justify-center sm:flex sm:ml-2 mb-5">
                                 <FacebookIcon />
-                                <label class="text-xs max-sm:hidden sm:ml-5">Facebook</label>
+                                <label class="social-link">Facebook</label>
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com" aria-label="twitter" class="items-center max-md:justify-center sm:flex sm:ml-2 mb-5">
                                 <TwitterIcon />
-                                <label class="text-xs max-sm:hidden sm:ml-5">Twitter</label>
+                                <label class="social-link">Twitter</label>
                             </a>
                         </li>
                         <li>
                             <a href="https://instagram.com" aria-label="instagram" class="items-center max-md:justify-center sm:flex sm:ml-2 mb-5">
                                 <InstagramIcon />
-                                <label class="text-xs max-sm:hidden sm:ml-5">Instagram</label>
+                                <label class="social-link">Instagram</label>
                             </a>
                         </li>
                     </ul>
@@ -44,13 +44,13 @@ import GoutLocalLogo from "./icons/GoutLocalLogo.vue";
 
                 <ul class="mt-3 font-bold">
                     <li class="">
-                        <RouterLink to="/pages/mentions" class="">Mentions légales</RouterLink>
+                        <RouterLink to="/pages/mentions" class="link">Mentions légales</RouterLink>
                     </li>
                     <li class="mt-6">
-                        <RouterLink to="/pages/about" class="">En savoir plus</RouterLink>
+                        <RouterLink to="/pages/about" class="link">En savoir plus</RouterLink>
                     </li>
                     <li class="mt-6">
-                        <RouterLink to="/pages/contact" class="">Contact</RouterLink>
+                        <RouterLink to="/pages/contact" class="link">Contact</RouterLink>
                     </li>
                 </ul>
 
