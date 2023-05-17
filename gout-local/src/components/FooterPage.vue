@@ -7,53 +7,58 @@ import GoutLocalLogo from "./icons/GoutLocalLogo.vue";
 </script>
 
 <template>
-    <footer class="bg-[#ebebeb] font-secondary text-sm lg:text-base max-md:text-center">
+    <footer class="bg-[#ebebeb] font-secondary transition-all duration-300 text-sm lg:text-base max-md:text-center">
         
         <div class="w-full h-1 bg-bleuTurquoise"></div>
 
-        <div class="px-20 p-6 md:justify-around md:flex">
-            <div class="max-md:mb-10">
-                <h2 class="font-bold">Réseaux sociaux</h2>
-                <ul class="max-sm:flex mx-sm:px-5 mt-6 justify-between">
-                    <li>
-                        <a href="https://facebook.com" aria-label="facebook" class="items-center sm:flex sm:ml-2 mb-5">
-                            <FacebookIcon />
-                            <label class="text-xs max-sm:hidden sm:ml-5">Facebook</label>
-                        </a>
+        <div class="p-6 px-20 md:pr-0 justify-between md:flex lg:tracking-wide">
+
+            <div class="my-auto mb-10 md:hidden"><GoutLocalLogo class="w-[92px] h-[92px] mx-auto" /></div>
+
+            <div class="md:flex">
+                <div class="mt-3 max-md:mb-10 md:mr-10 lg:mr-32">
+                    <h2 class="font-bold max-md:hidden">Réseaux sociaux</h2>
+                    <ul class="max-sm:flex mx-sm:px-5 mt-6 justify-between">
+                        <li>
+                            <a href="https://facebook.com" aria-label="facebook" class="items-center max-md:justify-center sm:flex sm:ml-2 mb-5">
+                                <FacebookIcon />
+                                <label class="text-xs max-sm:hidden sm:ml-5">Facebook</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" aria-label="twitter" class="items-center max-md:justify-center sm:flex sm:ml-2 mb-5">
+                                <TwitterIcon />
+                                <label class="text-xs max-sm:hidden sm:ml-5">Twitter</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" aria-label="instagram" class="items-center max-md:justify-center sm:flex sm:ml-2 mb-5">
+                                <InstagramIcon />
+                                <label class="text-xs max-sm:hidden sm:ml-5">Instagram</label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex w-0.5 h-64 bg-bleuTurquoise max-md:hidden md:mr-10 lg:mr-32"></div>
+
+                <ul class="mt-3 font-bold">
+                    <li class="">
+                        <RouterLink to="/pages/mentions" class="">Mentions légales</RouterLink>
                     </li>
-                    <li>
-                        <a href="https://twitter.com" aria-label="twitter" class="items-center sm:flex sm:ml-2 mb-5">
-                            <TwitterIcon />
-                            <label class="text-xs max-sm:hidden sm:ml-5">Twitter</label>
-                        </a>
+                    <li class="mt-6">
+                        <RouterLink to="/pages/about" class="">En savoir plus</RouterLink>
                     </li>
-                    <li>
-                        <a href="https://instagram.com" aria-label="instagram" class="items-center sm:flex sm:ml-2 mb-5">
-                            <InstagramIcon />
-                            <label class="text-xs max-sm:hidden sm:ml-5">Instagram</label>
-                        </a>
+                    <li class="mt-6">
+                        <RouterLink to="/pages/contact" class="">Contact</RouterLink>
                     </li>
                 </ul>
+
+                <div class="flex w-0.5 h-64 bg-bleuTurquoise max-md:hidden md:ml-10 lg:ml-32"></div>
             </div>
-
-            <div class="flex w-0.5 h-64 bg-bleuTurquoise max-sm:hidden"></div>
-
-            <ul class="font-bold">
-                <li class="">
-                    <RouterLink to="/pages/mentions" class="">Mentions légales</RouterLink>
-                </li>
-                <li class="mt-6">
-                    <RouterLink to="/pages/about" class="">En savoir plus</RouterLink>
-                </li>
-                <li class="mt-6">
-                    <RouterLink to="/pages/contact" class="">Contact</RouterLink>
-                </li>
-            </ul>
-
-            <div class="flex w-0.5 h-64 bg-bleuTurquoise max-sm:hidden"></div>
-
-            <div class="items-center my-auto"><GoutLocalLogo class="w-[150px] h-[150px] mx-auto" /></div>
+        
+            <div class="my-auto mx-auto max-md:hidden"><GoutLocalLogo class="w-[150px] h-[150px]" /></div>
+    
         </div>
-
     </footer>   
 </template>
