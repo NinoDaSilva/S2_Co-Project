@@ -17,7 +17,7 @@ function closeMenu() {
         text-sm xl:text-lg lg:py-0">
         
         <div class="mr-8">
-            <a href="/index.vue">
+            <a href="/">
                 <GoutLocalLogo class="w-[75px] h-[75px]"/>
             </a>
         </div>

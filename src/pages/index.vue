@@ -78,7 +78,7 @@ import CardProduit from "@/components/CardProduit.vue";
 
   <section>
     <div class="md:flex">
-      <img src="/public/img/map-france.webp" alt="carte" class="mx-auto w-60 h-60 md:w-2/5 md:h-2/5">
+      <img src="/img/map-france.webp" alt="carte" class="mx-auto w-60 h-60 md:w-2/5 md:h-2/5">
 
       <div>
         <div>

@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory} from 'vue-router'
-import Accueil from '@/pages/home.vue';
+import Accueil from '@/pages/index.vue';
 import about from '@/pages/about.vue';
 import contact from '@/pages/contact.vue';
 import connexion from '@/pages/connexion.vue';
@@ -14,7 +14,7 @@ import recettes from '@/pages/recettes.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/home', name: 'home', component: Accueil },
+    { path: '/index', name: 'home', component: Accueil },
     { path: '/about', name: 'about', component: about },
     { path: '/contact', name: 'contact', component: contact },
     { path: '/connexion', name: 'connexion', component: connexion },
