@@ -23,13 +23,15 @@ import CardProduit from "@/components/CardProduit.vue";
   </div>
 
   <section>
-    <div>
+    <div class="flex">
       <img src="" alt="illustration">
-      <div>
-        <p>Avec nous, plus besoin de chercher des heures un producteur qui favorise le circuit court près de chez vous.</p> 
-        <p>Retrouver les facilement grâce à notre carte.</p>
-        <ArrowIcon />
-      </div>
+      <RouterLink to="/pages/partenaires" class="block-home">
+        <div>
+          <p>Avec nous, plus besoin de chercher des heures un producteur qui favorise le circuit court près de chez vous.</p>
+          <p>Retrouver les facilement grâce à notre carte.</p>
+        </div>
+        <ArrowIcon class="block-home--arrow"/>
+      </RouterLink>
     </div>
 
     <div>
@@ -44,13 +46,13 @@ import CardProduit from "@/components/CardProduit.vue";
       </div>
     </div>
 
-    <div>
+    <div class="flex">
       <img src="" alt="illustration">
-      <div>
+      <RouterLink to="/pages/recettes" class="block-home">
         <p>Nous vous proposons une variété d'idées de recettes à faire avec les produits que vous venez d'acheter. 
           Alors n'hésitez plus et faites vous plaisir avec de bons petits plats.</p>
-        <ArrowIcon />
-      </div>
+        <ArrowIcon class="block-home--arrow"/>
+      </RouterLink>
     </div>
   </section>
 

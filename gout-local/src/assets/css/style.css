@@ -27,4 +27,10 @@
   .grille {
     @apply lg:grid lg:grid-cols-principal lg:justify-center lg:gap-12 px-6;
   }
+  .block-home {
+    @apply flex items-center max-md:text-3xs max-w-[1450px] p-10 pl-20 md:pl-40 rounded-[90px] bg-brunClair shadow-md;
+  }
+  .block-home--arrow {
+    @apply max-sm:hidden max-h-[40px] ml-10 lg:ml-40 min-w-[20px] md:min-w-[40px];
+  }
 }
