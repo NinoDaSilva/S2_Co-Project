@@ -67,7 +67,7 @@ import CardProduit from "@/components/CardProduit.vue";
       </div>
     </div>
 
-    <div>
+    <div class="flex justify-between p-10 lg:px-40">
       <RouterLink to="/pages/produits"><CardProduit :id="1" title="" imgPath="" imgAlt=""/></RouterLink>
       <RouterLink to="/pages/produits"><CardProduit :id="2" title="" imgPath="" imgAlt=""/></RouterLink>
       <RouterLink to="/pages/produits"><CardProduit :id="3" title="" imgPath="" imgAlt=""/></RouterLink>
