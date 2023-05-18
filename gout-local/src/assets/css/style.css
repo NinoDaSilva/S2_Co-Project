@@ -24,4 +24,7 @@
   .social-link {
     @apply text-xs max-sm:hidden sm:ml-5 hover:text-vert duration-200;
   }
+  .grille {
+    @apply lg:grid lg:grid-cols-principal lg:justify-center lg:gap-12 px-6;
+  }
 }
