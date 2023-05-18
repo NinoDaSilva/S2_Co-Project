@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Hero from "@/components/Hero.vue";
-import ArrowIcon from "@/components/icons/ArrowIcon.vue"
+import ArrowIcon from "@/components/icons/ArrowIcon.vue";
+import CardProduit from "@/components/CardProduit.vue";
 </script>
 
 <template>
@@ -67,9 +68,9 @@ import ArrowIcon from "@/components/icons/ArrowIcon.vue"
     </div>
 
     <div>
-      <!--<RouterLink to="/pages/produits"><CardProduit/></RouterLink-->
-      <!--<RouterLink to="/pages/produits"><CardProduit/></RouterLink-->
-      <!--<RouterLink to="/pages/produits"><CardProduit/></RouterLink-->
+      <RouterLink to="/pages/produits"><CardProduit :id="1" title="" imgPath="" imgAlt=""/></RouterLink>
+      <RouterLink to="/pages/produits"><CardProduit :id="2" title="" imgPath="" imgAlt=""/></RouterLink>
+      <RouterLink to="/pages/produits"><CardProduit :id="3" title="" imgPath="" imgAlt=""/></RouterLink>
     </div>
   </section>
 
