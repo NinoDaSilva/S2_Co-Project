@@ -8,6 +8,7 @@ module.exports = {
     colors: {
       'blanc': '#fafafa',
       'brun': '#413b3b',
+      "vertClair" : '#e5f4ef',
       'vert': '#6ac25e',
       'vertFonce': '#129418',
       'vertBleu': '#00b98f',
