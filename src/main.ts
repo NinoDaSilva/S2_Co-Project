@@ -9,10 +9,10 @@ import './assets/css/style.css'
 const app = createApp(App)
 
 app.use(
-    createRouter({
-      history: createWebHistory(),
-      routes
-    })
-  )
-  
+  createRouter({
+    history: createWebHistory(),
+    routes
+  })
+)
+
 app.mount('#app')
