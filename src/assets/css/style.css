@@ -65,4 +65,10 @@
   .underligne {
     @apply w-[14vh] h-1 bg-vertFonce rounded-xl;
   }
+  .form-label--home {
+    @apply sm:text-sm font-bold;
+  }
+  .form-champ--home {
+    @apply bg-transparent border border-vertFonce rounded-full w-full py-2.5 px-6 leading-tight focus:outline-vert focus:scale-[1.01] mt-1;
+  }
 }

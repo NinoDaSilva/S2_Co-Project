@@ -15,7 +15,8 @@ module.exports = {
       'brunClair': '#fdf4ee',
       'noir': '#1c1514',
       'bleuClair': '#c9f2e4',
-      'bleuTurquoise': '#00aeb6'
+      'bleuTurquoise': '#00aeb6',
+      'transparent': 'transparent',
     },
     fontFamily: {
       specific: ['Mochiy Pop One', 'sans-serif'],
