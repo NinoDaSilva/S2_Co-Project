@@ -40,15 +40,15 @@ import CardProduit from '@/components/CardProduit.vue'
       </RouterLink>
     </div>
 
-    <div>
+    <div class="sm:text-sm xl:text-lg sm:ml-32 sm:mt-14">
       <div class="ml-8">
         <p class="-ml-8">Vous ne savez pas quoi cuisiner ?</p>
-        <div class="underligne w-[26vh] sm:w-[40vh]"></div>
+        <div class="underligne w-[20vh] sm:w-[40vh]"></div>
       </div>
 
-      <div class="ml-40 ">
-        <p class="-ml-8 mt-3">Pas de problème !</p>
-        <div class="underligne sm:w-[22vh]"></div>
+      <div class="ml-40 sm:ml-60">
+        <p class="-ml-8 mt-4">Pas de problème !</p>
+        <div class="underligne w-[10vh] sm:w-[22vh]"></div>
       </div>
     </div>
 
@@ -65,15 +65,15 @@ import CardProduit from '@/components/CardProduit.vue'
   </section>
 
   <section>
-    <div>
+    <div class="xl:text-xl">
       <div class="ml-8">
         <h2 class="-ml-8">Des produit frais</h2>
-        <div class="underligne w-[12vh] sm:w-[20vh]"></div>
+        <div class="underligne w-[10vh] sm:w-[20vh]"></div>
       </div>
 
-      <div class="ml-28 mt-3 sm:ml-8">
+      <div class="ml-24 mt-4 sm:ml-40">
         <h2 class="-ml-5 sm:-ml-8">et de saison !</h2>
-        <div class="underligne w-[10vh] sm:w-[15vh]"></div>
+        <div class="underligne w-[8vh] sm:w-[15vh]"></div>
       </div>
     </div>
 
@@ -90,36 +90,36 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
   </section>
 
-  <section>
-    <div class="md:flex">
-      <img src="/img/map-france.webp" alt="carte" class="mx-auto w-60 h-60 md:w-2/5 md:h-2/5" />
+  <section class="bg-brunClair -mx-[20px] tracking-wide sm:-mx-[30px] p-4 py-6 sm:p-10 xl:px-20">
+    <div class="lg:flex max-w-[1920px] mx-auto">
+      <img src="/img/map-france.webp" alt="carte" class="mx-auto my-auto w-60 h-60 md:w-1/2 md:h-1/2 lg:w-2/5 lg:h-2/5" />
 
-      <div>
-        <div class="ml-12 mb-4">
+      <div class="mt-5 sm:mx-10 lg:ml-20 xl:mt-16 xl:mx-20">
+        <div class="ml-12 mb-5 lg:mb-8">
           <h2 class="-ml-8">Quelques producteurs</h2>
           <div class="underligne w-[16vh] sm:w-[28vh]"></div>
         </div>
-        <p>Goût local n'hésite pas à se rapprocher directement auprès des producteurs.</p>
-        <p>
+        <p class="md:text-xs xl:text-base">Goût local n'hésite pas à se rapprocher directement auprès des producteurs.</p>
+        <p class="md:text-xs xl:text-base">
           Cela permet notamment de mettre en place des ventes directes pour vous offrir la
           possibilité de récupérer des produits frais directement à la source.
         </p>
-        <p>Un geste écologique...</p>
-        <p>
+        <p class="ml-6 my-3">Un geste écologique...</p>
+        <p class="md:text-xs xl:text-base">
           Et cela permet aux producteurs de vendre leurs produits invendus avant leur péremption,
           <strong>à des prix réduits !</strong>
         </p>
-        <p>Ce qui leur évitent de jeter, et donc d'avoir de trop grosses pertes.</p>
-        <p>Un grand geste pour l'écologie et les producteurs locaux.</p>
+        <p class="md:text-xs xl:text-base">Ce qui leur évitent de jeter, et donc d'avoir de trop grosses pertes.</p>
+        <p class="text-center mt-4">Un grand geste pour l'écologie et les producteurs locaux.</p>
       </div>
     </div>
 
-    <div class="sm:flex max-sm:text-center">
-      <div class="ml-10 mb-3">
+    <div class="mt-6 sm:mt-10 md:mt-14 sm:ml-8 md:flex max-sm:text-center">
+      <div class="ml-10 mb-4">
         <p class="-ml-10">Pour en savoir plus, nous vous invitons à cliquer</p>
-        <div class="underligne w-full sm:w-[50vh]"></div>
+        <div class="max-sm:hidden underligne w-full sm:w-[50vh]"></div>
       </div>
-      <RouterLink to="/pages/partenaires">
+      <RouterLink to="/pages/partenaires" class="md:ml-10 max-md:text-center">
         <p>juste ici</p>
       </RouterLink>
     </div>
@@ -137,15 +137,15 @@ import CardProduit from '@/components/CardProduit.vue'
       </RouterLink>
     </div>
 
-    <div>
+    <div class="sm:ml-10 sm:mt-14">
       <div class="ml-6">
-        <p class="-ml-6">Vous ne savez pas quoi cuisiner ?</p>
-        <div class="underligne sm:w-[40vh]"></div>
+        <p class="-ml-6">Besoins de conseils pour mieux consommer ? </p>
+        <div class="underligne w-[32vh] sm:w-[48vh]"></div>
       </div>
 
-      <div class="ml-6">
-        <p class="-ml-6">Pas de problème !</p>
-        <div class="underligne"></div>
+      <div class="ml-52 sm:ml-80">
+        <p class="-ml-6 mt-4">Pas de problème !</p>
+        <div class="underligne w-[12vh] sm:w-[20vh]"></div>
       </div>
     </div>
 
