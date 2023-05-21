@@ -169,22 +169,26 @@ import CardProduit from '@/components/CardProduit.vue'
         <label class="form-label--home" for="last-name">
           Nom
         </label>
-        <input class="form-champ--home"
+        <input class="form-champ"
           id="last-name" type="text" placeholder="Entrez votre nom">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="first-name">
           Prénom
         </label>
-        <input class="form-champ--home"
+        <input class="form-champ"
           id="first-name" type="text" placeholder="Entrez votre prénom">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="email">
           Mail
         </label>
-        <input class="form-champ--home"
+        <input class="form-champ"
           id="email" type="email" placeholder="Entrez votre adresse mail">
+      </div>
+      <div class="mt-5 items-center">
+        <input class="mr-3 sm:mr-5" id="confidential" type="checkbox">
+        <label for="confidential">J'accepte <RouterLink to="/pages/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
         <button class="bg-vertFonce text-blanc font-Subheading py-2 px-10 sm:px-16 rounded-full" type="submit">

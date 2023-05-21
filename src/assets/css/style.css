@@ -28,6 +28,7 @@
   }
   main {
     padding: 20px;
+    padding-bottom: 0;
   }
 }
 
@@ -68,7 +69,7 @@
   .form-label--home {
     @apply sm:text-sm font-bold;
   }
-  .form-champ--home {
+  .form-champ {
     @apply bg-transparent border border-vertFonce rounded-full w-full py-2.5 px-6 leading-tight focus:outline-vert focus:scale-[1.01] mt-1;
   }
 }
