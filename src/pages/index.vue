@@ -26,7 +26,7 @@ import CardProduit from '@/components/CardProduit.vue'
   </div>
 
   <section>
-    <div class="flex md:px-10 justify-center">
+    <div class="parent-block-home">
       <CarotteIcon class="icon-home"/>
       <RouterLink to="/pages/partenaires" class="block-home">
         <div>
@@ -41,18 +41,18 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
 
     <div>
-      <div>
-        <p>Vous ne savez pas quoi cuisiner ?</p>
-        <div class="w-full h-1 bg-vertFonce"></div>
+      <div class="ml-8">
+        <p class="-ml-8">Vous ne savez pas quoi cuisiner ?</p>
+        <div class="underligne w-[26vh] sm:w-[40vh]"></div>
       </div>
 
-      <div>
-        <p>Pas de problème !</p>
-        <div class="w-full h-1 bg-vertFonce"></div>
+      <div class="ml-40 ">
+        <p class="-ml-8 mt-3">Pas de problème !</p>
+        <div class="underligne sm:w-[22vh]"></div>
       </div>
     </div>
 
-    <div class="flex md:px-10 justify-center">
+    <div class="parent-block-home">
       <RecetteIcon class="icon-home"/>
       <RouterLink to="/pages/recettes" class="block-home">
         <p>
@@ -66,14 +66,14 @@ import CardProduit from '@/components/CardProduit.vue'
 
   <section>
     <div>
-      <div>
-        <h2>Des produit frais</h2>
-        <div class="w-full h-1 bg-vertFonce"></div>
+      <div class="ml-8">
+        <h2 class="-ml-8">Des produit frais</h2>
+        <div class="underligne w-[12vh] sm:w-[20vh]"></div>
       </div>
 
-      <div>
-        <h2>et de saison !</h2>
-        <div class="w-full h-1 bg-vertFonce"></div>
+      <div class="ml-28 mt-3 sm:ml-8">
+        <h2 class="-ml-5 sm:-ml-8">et de saison !</h2>
+        <div class="underligne w-[10vh] sm:w-[15vh]"></div>
       </div>
     </div>
 
@@ -95,9 +95,9 @@ import CardProduit from '@/components/CardProduit.vue'
       <img src="/img/map-france.webp" alt="carte" class="mx-auto w-60 h-60 md:w-2/5 md:h-2/5" />
 
       <div>
-        <div>
-          <h2>Quelques producteurs</h2>
-          <div class="w-full h-1 bg-vertFonce"></div>
+        <div class="ml-12 mb-4">
+          <h2 class="-ml-8">Quelques producteurs</h2>
+          <div class="underligne w-[16vh] sm:w-[28vh]"></div>
         </div>
         <p>Goût local n'hésite pas à se rapprocher directement auprès des producteurs.</p>
         <p>
@@ -114,10 +114,10 @@ import CardProduit from '@/components/CardProduit.vue'
       </div>
     </div>
 
-    <div class="flex">
-      <div>
-        <p>Pour en savoir plus, nous vous invitons à cliquer</p>
-        <div class="w-full h-1 bg-vertFonce"></div>
+    <div class="sm:flex max-sm:text-center">
+      <div class="ml-10 mb-3">
+        <p class="-ml-10">Pour en savoir plus, nous vous invitons à cliquer</p>
+        <div class="underligne w-full sm:w-[50vh]"></div>
       </div>
       <RouterLink to="/pages/partenaires">
         <p>juste ici</p>
@@ -126,7 +126,7 @@ import CardProduit from '@/components/CardProduit.vue'
   </section>
 
   <section>
-    <div class="flex md:px-10 justify-center">
+    <div class="parent-block-home">
       <JournalIcon class="icon-home"/>
       <RouterLink to="/pages/events" class="block-home bg-vertClair">
         <p>
@@ -138,18 +138,18 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
 
     <div>
-      <div>
-        <p>Vous ne savez pas quoi cuisiner ?</p>
-        <div class="w-full h-1 bg-vertFonce"></div>
+      <div class="ml-6">
+        <p class="-ml-6">Vous ne savez pas quoi cuisiner ?</p>
+        <div class="underligne sm:w-[40vh]"></div>
       </div>
 
-      <div>
-        <p>Pas de problème !</p>
-        <div class="w-full h-1 bg-vertFonce"></div>
+      <div class="ml-6">
+        <p class="-ml-6">Pas de problème !</p>
+        <div class="underligne"></div>
       </div>
     </div>
 
-    <div class="flex md:px-10 justify-center">
+    <div class="parent-block-home">
       <SanteIcon class="icon-home"/>
       <RouterLink to="/pages/conseils" class="block-home bg-vertClair">
         <p>On vous propose quelques conseils afin de mieux consommer et adapter vos habitudes.</p>
