@@ -17,6 +17,7 @@
 @media (max-width: 640px) { 
   body {
     font-size: 0.875rem;
+    line-height: 1rem;
   }
 }
 
@@ -34,9 +35,12 @@
     @apply lg:grid lg:grid-cols-principal lg:justify-center lg:gap-12 px-6;
   }
   .block-home {
-    @apply flex items-center max-md:text-4xs max-w-[1450px] p-5 pl-10 sm:pl-20 md:pl-24 lg:pl-40 lg:p-10 rounded-[90px] bg-brunClair shadow-md;
+    @apply flex items-center text-5xs md:text-4xs lg:text-sm max-w-[1450px] p-5 pl-14 sm:pl-16 md:pl-24 lg:pl-40 lg:p-10 rounded-[90px] bg-brunClair shadow-md;
   }
   .block-home--arrow {
     @apply max-sm:hidden max-h-[40px] ml-10 lg:ml-40 min-w-[20px] md:min-w-[40px];
+  }
+  .icon-home {
+    @apply -mr-10 -mt-10 z-10 md:-mr-16 lg:-mr-28 lg:-mt-20 max-w-[85px] md:max-w-[120px] lg:max-w-[200px];
   }
 }

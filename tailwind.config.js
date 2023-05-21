@@ -25,6 +25,7 @@ module.exports = {
       title: ['Raleway', 'sans-serif'],
     },
     fontSize: {
+      '5xs': '0.8rem', //12px
       '4xs': '0.875rem', //14px
       '3xs': '0.9375rem', //15px
       '2xs': '1rem', //16px

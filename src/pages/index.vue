@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import Hero from '@/components/Hero.vue'
 import ArrowIcon from '@/components/icons/ArrowIcon.vue'
+import CarotteIcon from '@/components/icons/CarotteIcon.vue'
+import RecetteIcon from '@/components/icons/RecetteIcon.vue'
+import JournalIcon from '@/components/icons/JournalIcon.vue'
+
 import CardProduit from '@/components/CardProduit.vue'
 </script>
 
@@ -21,9 +25,9 @@ import CardProduit from '@/components/CardProduit.vue'
     <h1>Goût local</h1>
   </div>
 
-  <section>
+  <section class="p-4">
     <div class="flex">
-      <img src="" alt="illustration" />
+      <CarotteIcon class="icon-home"/>
       <RouterLink to="/pages/partenaires" class="block-home">
         <div>
           <p>
@@ -49,7 +53,7 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
 
     <div class="flex">
-      <img src="" alt="illustration" />
+      <RecetteIcon class="icon-home"/>
       <RouterLink to="/pages/recettes" class="block-home">
         <p>
           Nous vous proposons une variété d'idées de recettes à faire avec les produits que vous
@@ -123,7 +127,7 @@ import CardProduit from '@/components/CardProduit.vue'
 
   <section>
     <div class="flex">
-      <img src="" alt="illustration" />
+      <JournalIcon class="icon-home"/>
       <RouterLink to="/pages/events" class="block-home bg-vertClair">
         <p>
           Retrouver toute l'actualité concernants des évènements communautaire locaux, tels que les
