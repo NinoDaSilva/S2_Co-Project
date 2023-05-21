@@ -4,7 +4,7 @@ import ArrowIcon from '@/components/icons/ArrowIcon.vue'
 import CarotteIcon from '@/components/icons/CarotteIcon.vue'
 import RecetteIcon from '@/components/icons/RecetteIcon.vue'
 import JournalIcon from '@/components/icons/JournalIcon.vue'
-
+import SanteIcon from '@/components/icons/SanteIcon.vue'
 import CardProduit from '@/components/CardProduit.vue'
 </script>
 
@@ -25,7 +25,7 @@ import CardProduit from '@/components/CardProduit.vue'
     <h1>Goût local</h1>
   </div>
 
-  <section class="p-4">
+  <section>
     <div class="flex">
       <CarotteIcon class="icon-home"/>
       <RouterLink to="/pages/partenaires" class="block-home">
@@ -150,7 +150,7 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
 
     <div class="flex">
-      <img src="" alt="illustration" />
+      <SanteIcon class="icon-home"/>
       <RouterLink to="/pages/conseils" class="block-home bg-vertClair">
         <p>On vous propose quelques conseils afin de mieux consommer et adapter vos habitudes.</p>
         <ArrowIcon class="block-home--arrow" />

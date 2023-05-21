@@ -12,12 +12,18 @@
     font-size: 1.375rem;
     background-color: #fafafa;
   }
+  main {
+    padding: 30px;
+  }
 }
 
 @media (max-width: 640px) { 
   body {
     font-size: 0.875rem;
     line-height: 1rem;
+  }
+  main {
+    padding: 20px;
   }
 }
 
@@ -41,6 +47,6 @@
     @apply max-sm:hidden max-h-[40px] ml-10 lg:ml-40 min-w-[20px] md:min-w-[40px];
   }
   .icon-home {
-    @apply -mr-10 -mt-10 z-10 md:-mr-16 lg:-mr-28 lg:-mt-20 max-w-[85px] md:max-w-[120px] lg:max-w-[200px];
+    @apply -mr-10 -mt-10 z-10 md:-mr-16 lg:-mr-28 lg:-mt-20 max-w-[85px] md:max-w-[120px] lg:max-w-[200px] ;
   }
 }
