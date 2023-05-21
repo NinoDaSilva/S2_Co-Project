@@ -65,27 +65,27 @@ watch(y, (y, oldY) => {
         :class="{ 'text-blanc': menuIsOpen }"
       >
         <li>
-          <RouterLink class="menu-link" to="/pages/produits" @click="closeMenu"
+          <RouterLink class="menu-link" to="/produits" @click="closeMenu"
             >Nos produits</RouterLink
           >
         </li>
         <li>
-          <RouterLink class="menu-link" to="/pages/recettes" @click="closeMenu"
+          <RouterLink class="menu-link" to="/recettes" @click="closeMenu"
             >Nos recettes</RouterLink
           >
         </li>
         <li>
-          <RouterLink class="menu-link" to="/pages/conseils" @click="closeMenu"
+          <RouterLink class="menu-link" to="/conseils" @click="closeMenu"
             >Nos conseils</RouterLink
           >
         </li>
         <li>
-          <RouterLink class="menu-link" to="/pages/events" @click="closeMenu"
+          <RouterLink class="menu-link" to="/events" @click="closeMenu"
             >Évènements</RouterLink
           >
         </li>
         <li>
-          <RouterLink class="menu-link" to="/pages/partenaires" @click="closeMenu"
+          <RouterLink class="menu-link" to="/partenaires" @click="closeMenu"
             >Nos partenaires</RouterLink
           >
         </li>
@@ -98,12 +98,12 @@ watch(y, (y, oldY) => {
     >
       <RouterLink
         class="menu-link max-lg:mt-[2.8vh] max-lg:ml-3"
-        to="/pages/panier"
+        to="/panier"
         @click="closeMenu"
         ><PanierIcon
       /></RouterLink>
 
-      <RouterLink class="menu-link" to="/pages/connexion" @click="closeMenu">Connexion</RouterLink>
+      <RouterLink class="menu-link" to="/connexion" @click="closeMenu">Connexion</RouterLink>
     </div>
   </header>
 </template>

@@ -56,13 +56,13 @@ import GoutLocalLogo from './icons/GoutLocalLogo.vue'
 
         <ul class="mt-3 font-bold">
           <li class="">
-            <RouterLink to="/pages/mentions" class="link">Mentions légales</RouterLink>
+            <RouterLink to="/mentions" class="link">Mentions légales</RouterLink>
           </li>
           <li class="mt-6">
-            <RouterLink to="/pages/about" class="link">En savoir plus</RouterLink>
+            <RouterLink to="/about" class="link">En savoir plus</RouterLink>
           </li>
           <li class="mt-6">
-            <RouterLink to="/pages/contact" class="link">Contact</RouterLink>
+            <RouterLink to="/contact" class="link">Contact</RouterLink>
           </li>
         </ul>
 

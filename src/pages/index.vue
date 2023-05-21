@@ -28,7 +28,7 @@ import CardProduit from '@/components/CardProduit.vue'
   <section>
     <div class="parent-block-home">
       <CarotteIcon class="icon-home"/>
-      <RouterLink to="/pages/partenaires" class="block-home">
+      <RouterLink to="/partenaires" class="block-home">
         <div>
           <p>
             Avec nous, plus besoin de chercher des heures un producteur qui favorise le circuit
@@ -54,7 +54,7 @@ import CardProduit from '@/components/CardProduit.vue'
 
     <div class="parent-block-home">
       <RecetteIcon class="icon-home"/>
-      <RouterLink to="/pages/recettes" class="block-home">
+      <RouterLink to="/recettes" class="block-home">
         <p>
           Nous vous proposons une variété d'idées de recettes à faire avec les produits que vous
           venez d'acheter. Alors n'hésitez plus et faites vous plaisir avec de bons petits plats.
@@ -78,13 +78,13 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
 
     <div class="flex justify-between p-10 lg:px-40">
-      <RouterLink to="/pages/produits"
+      <RouterLink to="/produits"
         ><CardProduit :id="1" title="" imgPath="" imgAlt=""
       /></RouterLink>
-      <RouterLink to="/pages/produits"
+      <RouterLink to="/produits"
         ><CardProduit :id="2" title="" imgPath="" imgAlt=""
       /></RouterLink>
-      <RouterLink to="/pages/produits"
+      <RouterLink to="/produits"
         ><CardProduit :id="3" title="" imgPath="" imgAlt=""
       /></RouterLink>
     </div>
@@ -119,7 +119,7 @@ import CardProduit from '@/components/CardProduit.vue'
         <p class="-ml-10 font-bold">Pour en savoir plus, nous vous invitons à cliquer</p>
         <div class="max-sm:hidden underligne w-full sm:w-[50vh]"></div>
       </div>
-      <RouterLink to="/pages/partenaires" class="md:ml-10 max-md:text-center">
+      <RouterLink to="/partenaires" class="md:ml-10 max-md:text-center">
         <p>juste ici</p>
       </RouterLink>
     </div>
@@ -128,7 +128,7 @@ import CardProduit from '@/components/CardProduit.vue'
   <section>
     <div class="parent-block-home">
       <JournalIcon class="icon-home"/>
-      <RouterLink to="/pages/events" class="block-home bg-vertClair">
+      <RouterLink to="/events" class="block-home bg-vertClair">
         <p>
           Retrouver toute l'actualité concernants des évènements communautaire locaux, tels que les
           marchés, les foires écologiques, les ateliers de jardinage, etc.
@@ -151,7 +151,7 @@ import CardProduit from '@/components/CardProduit.vue'
 
     <div class="parent-block-home">
       <SanteIcon class="icon-home"/>
-      <RouterLink to="/pages/conseils" class="block-home bg-vertClair">
+      <RouterLink to="/conseils" class="block-home bg-vertClair">
         <p>On vous propose quelques conseils afin de mieux consommer et adapter vos habitudes.</p>
         <ArrowIcon class="block-home--arrow" />
       </RouterLink>
@@ -188,7 +188,7 @@ import CardProduit from '@/components/CardProduit.vue'
       </div>
       <div class="mt-5 items-center">
         <input class="mr-3 sm:mr-5" id="confidential" type="checkbox">
-        <label for="confidential">J'accepte <RouterLink to="/pages/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
+        <label for="confidential">J'accepte <RouterLink to="/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
         <button class="bg-vertFonce text-blanc font-Subheading py-2 px-10 sm:px-16 rounded-full" type="submit">
