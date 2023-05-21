@@ -20,13 +20,13 @@ import CardProduit from '@/components/CardProduit.vue'
     </template>
   </Hero>
 
-  <div>
+  <div class="text-center">
     <h2>Vert, écolo et proche de chez vous !</h2>
     <h1>Goût local</h1>
   </div>
 
   <section>
-    <div class="flex">
+    <div class="flex md:px-10 justify-center">
       <CarotteIcon class="icon-home"/>
       <RouterLink to="/pages/partenaires" class="block-home">
         <div>
@@ -52,7 +52,7 @@ import CardProduit from '@/components/CardProduit.vue'
       </div>
     </div>
 
-    <div class="flex">
+    <div class="flex md:px-10 justify-center">
       <RecetteIcon class="icon-home"/>
       <RouterLink to="/pages/recettes" class="block-home">
         <p>
@@ -126,7 +126,7 @@ import CardProduit from '@/components/CardProduit.vue'
   </section>
 
   <section>
-    <div class="flex">
+    <div class="flex md:px-10 justify-center">
       <JournalIcon class="icon-home"/>
       <RouterLink to="/pages/events" class="block-home bg-vertClair">
         <p>
@@ -149,7 +149,7 @@ import CardProduit from '@/components/CardProduit.vue'
       </div>
     </div>
 
-    <div class="flex">
+    <div class="flex md:px-10 justify-center">
       <SanteIcon class="icon-home"/>
       <RouterLink to="/pages/conseils" class="block-home bg-vertClair">
         <p>On vous propose quelques conseils afin de mieux consommer et adapter vos habitudes.</p>
