@@ -21,8 +21,8 @@ import CardProduit from '@/components/CardProduit.vue'
   </Hero>
 
   <div class="text-center">
-    <h2>Vert, écolo et proche de chez vous !</h2>
-    <h1>Goût local</h1>
+    <h2 class="text-2xs lg:text-xl">Vert, écolo et proche de chez vous !</h2>
+    <h1 class="font-specific text-xs mt-1 sm:mt-0 lg:text-2xl">Goût local</h1>
   </div>
 
   <section>
@@ -40,7 +40,7 @@ import CardProduit from '@/components/CardProduit.vue'
       </RouterLink>
     </div>
 
-    <div class="sm:text-sm xl:text-lg sm:ml-32 sm:mt-14">
+    <div class="text-brun font-bold sm:text-sm xl:text-lg sm:ml-32 sm:mt-14">
       <div class="ml-8">
         <p class="-ml-8">Vous ne savez pas quoi cuisiner ?</p>
         <div class="underligne w-[20vh] sm:w-[40vh]"></div>
@@ -90,11 +90,11 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
   </section>
 
-  <section class="bg-brunClair -mx-[20px] tracking-wide sm:-mx-[30px] p-4 py-6 sm:p-10 xl:px-20">
+  <section class="bg-brunClair -mx-[20px] tracking-wide sm:-mx-[100px] p-4 py-6 sm:p-10 xl:px-20">
     <div class="lg:flex max-w-[1920px] mx-auto">
       <img src="/img/map-france.webp" alt="carte" class="mx-auto my-auto w-60 h-60 md:w-1/2 md:h-1/2 lg:w-2/5 lg:h-2/5" />
 
-      <div class="mt-5 sm:mx-10 lg:ml-20 xl:mt-16 xl:mx-20">
+      <div class="mt-5 sm:mx-10 lg:ml-20 xl:mt-16 xl:mx-20 xl:mr-10 xl:ml-36">
         <div class="ml-12 mb-5 lg:mb-8">
           <h2 class="-ml-8">Quelques producteurs</h2>
           <div class="underligne w-[16vh] sm:w-[28vh]"></div>
@@ -116,7 +116,7 @@ import CardProduit from '@/components/CardProduit.vue'
 
     <div class="mt-6 sm:mt-10 md:mt-14 sm:ml-8 md:flex max-sm:text-center">
       <div class="ml-10 mb-4">
-        <p class="-ml-10">Pour en savoir plus, nous vous invitons à cliquer</p>
+        <p class="-ml-10 font-bold">Pour en savoir plus, nous vous invitons à cliquer</p>
         <div class="max-sm:hidden underligne w-full sm:w-[50vh]"></div>
       </div>
       <RouterLink to="/pages/partenaires" class="md:ml-10 max-md:text-center">
@@ -137,7 +137,7 @@ import CardProduit from '@/components/CardProduit.vue'
       </RouterLink>
     </div>
 
-    <div class="sm:ml-10 sm:mt-14">
+    <div class="text-brun font-bold sm:ml-10 sm:mt-14">
       <div class="ml-6">
         <p class="-ml-6">Besoins de conseils pour mieux consommer ? </p>
         <div class="underligne w-[32vh] sm:w-[48vh]"></div>
