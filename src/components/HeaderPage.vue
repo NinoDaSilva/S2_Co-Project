@@ -13,11 +13,11 @@ function closeMenu() {
 
 <template>
   <header
-    class="bg-blanc bg-opacity-80 fixed z-20 flex w-full translate-y-0 items-center justify-between px-6 py-4 transition-all duration-300 ease-in-out text-sm xl:text-lg lg:py-0"
+    class="bg-blanc bg-opacity-80 fixed z-20 flex w-full translate-y-0 items-center justify-between px-6 py-2 transition-all duration-300 ease-in-out text-sm xl:text-lg"
   >
     <div class="mr-8">
       <a href="/">
-        <GoutLocalLogo class="w-[75px] h-[75px]" />
+        <GoutLocalLogo class="w-[64px] h-[64px] sm:w-[75px] sm:h-[75px]" />
       </a>
     </div>
 
