@@ -9,16 +9,11 @@ defineProps<{
 </script>
 
 <template>
-  <div class="sm:-mx-[100px]">
-    <div>
-      <h1>{{ title }}</h1>
+  <div class="relative z-0 sm:-mx-[100px]">
+    <img :src="imgPath" :alt="imgAlt" />
+    <div class="absolute">
+      <h1 class="text-center">{{ title }}</h1>
       <img v-if="(imgSndAlt, imgSndPath)" :src="imgSndPath" :alt="imgSndAlt" />
     </div>
-
-    <div>
-      <slot name="elt"></slot>
-    </div>
-
-    <img :src="imgPath" :alt="imgAlt" />
   </div>
 </template>

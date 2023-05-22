@@ -14,14 +14,10 @@ import CardProduit from '@/components/CardProduit.vue'
 
 <template>
   <Hero
-    class="z-0"
     title="Découvrez nos produits 100% locaux !"
     imgPath="/img/hero/accueil.webp"
     imgAlt="Image bannière page d'accueil"
   >
-    <template>
-      <div></div>
-    </template>
   </Hero>
 
   <div class="text-center">
