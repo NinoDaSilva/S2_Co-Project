@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import {useHead} from '@unhead/vue'
+useHead ({
+  title: 'Contact'
+}) 
+
 import Hero from '@/components/Hero.vue'
 </script>
 

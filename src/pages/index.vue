@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import {useHead} from '@unhead/vue'
+useHead ({
+  title: 'Accueil'
+}) 
 import Hero from '@/components/Hero.vue'
 import ArrowIcon from '@/components/icons/ArrowIcon.vue'
 import CarotteIcon from '@/components/icons/CarotteIcon.vue'

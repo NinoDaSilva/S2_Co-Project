@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import {useHead} from '@unhead/vue'
+useHead ({
+  title: 'A propos'
+}) 
+</script>
+
 <template>
   <div class="about">
     <h1>This is an about page</h1>
