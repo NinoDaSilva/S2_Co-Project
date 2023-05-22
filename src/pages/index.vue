@@ -162,13 +162,13 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
   </section>
 
-  <section class="bg-vertClair -mx-[20px] py-5 sm:py-10 sm:-mx-[100px]">
+  <section class="bg-vertClair -mx-[20px] py-5 sm:py-10 sm:-mx-[100px] md:mt-20">
     <div class="text-center">
       <h2 class="sm:text-lg">Suivez les infos avec notre Newsletter</h2>
       <div class="w-[40vh] sm:w-[58vh] h-1 bg-bleuTurquoise rounded-xl mx-auto mt-2"></div>
     </div>
 
-    <form class="max-w-md md:max-w-xl mx-auto px-8 pt-6 mb-4 mt-4 sm:mt-8">
+    <form class="max-w-md md:max-w-xl mx-auto px-8 pt-6 mb-4 mt-4 sm:mt-10">
       <div class="mb-4">
         <label class="form-label--home" for="last-name">
           Nom
