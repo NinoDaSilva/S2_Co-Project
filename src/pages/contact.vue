@@ -19,7 +19,7 @@ import Hero from '@/components/Hero.vue'
     </template>
   </Hero>
 
-  <form class="max-w-md md:max-w-xl mx-auto px-8 pt-6 mb-4 mt-4 sm:mt-8">
+  <form class="max-w-md md:max-w-xl mx-auto px-8 pt-6 mb-8 mt-4 sm:mt-8 sm:mb-12">
       <div class="mb-4">
         <label class="form-label--home" for="last-name">
           Nom
@@ -52,7 +52,7 @@ import Hero from '@/components/Hero.vue'
         <label for="confidential">J'accepte <RouterLink to="/pages/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
-        <button class="bg-bleuTurquoise text-blanc font-Subheading py-2 px-10 sm:px-16 rounded-full" type="submit">
+        <button class="bg-bleuTurquoise text-blanc font-Subheading py-2 px-10 sm:px-16 rounded-full shadow-md hover:scale-[1.02] duration-300" type="submit">
           Envoyez
         </button>
       </div>
