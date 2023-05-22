@@ -42,17 +42,17 @@ watch(y, (y, oldY) => {
       <div
         class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
         :class="{ 'translate-y-[9px] rotate-45 bg-blanc': menuIsOpen,
-                '!bg-blanc': underLimit}"
+                '!bg-noir': underLimit}"
       ></div>
       <div
         class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
         :class="{ 'opacity-0': menuIsOpen,
-                '!bg-blanc': underLimit }"
+                '!bg-noir': underLimit }"
       ></div>
       <div
         class="ease h-[2px] w-full transform rounded-full bg-noir transition duration-300"
         :class="{ '-translate-y-[9px] -rotate-45 bg-blanc': menuIsOpen,
-                '!bg-blanc': underLimit }"
+                '!bg-noir': underLimit }"
       ></div>
     </button>
 
