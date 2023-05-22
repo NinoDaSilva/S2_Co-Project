@@ -29,7 +29,7 @@ import CardProduit from '@/components/CardProduit.vue'
     <h1 class="font-specific text-xs mt-1 sm:mt-0 lg:text-2xl">Goût local</h1>
   </div>
 
-  <section>
+  <section class="sm:mb-28">
     <div class="parent-block-home">
       <CarotteIcon class="icon-home"/>
       <RouterLink to="/partenaires" class="block-home">
@@ -68,8 +68,8 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
   </section>
 
-  <section>
-    <div class="xl:text-xl">
+  <section class="sm:mb-10">
+    <div class="sm:mb-10 xl:text-xl">
       <div class="ml-8">
         <h2 class="-ml-8">Des produit frais</h2>
         <div class="underligne w-[10vh] sm:w-[20vh]"></div>
