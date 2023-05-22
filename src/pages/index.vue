@@ -16,7 +16,7 @@ import CardProduit from '@/components/CardProduit.vue'
   <Hero
     class="z-0"
     title="Découvrez nos produits 100% locaux !"
-    imgPath=""
+    imgPath="/img/hero/accueil.webp"
     imgAlt="Image bannière page d'accueil"
   >
     <template>
@@ -94,7 +94,7 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
   </section>
 
-  <section class="bg-brunClair -mx-[20px] tracking-wide sm:-mx-[100px] p-4 py-6 sm:p-10 xl:px-20">
+  <section class="bg-brunClair tracking-wide sm:px-20 sm:-mx-[100px] p-4 py-6 sm:p-10 xl:px-20">
     <div class="lg:flex max-w-[1920px] mx-auto">
       <img src="/img/map-france.webp" alt="carte" class="mx-auto my-auto w-60 h-60 md:w-1/2 md:h-1/2 lg:w-2/5 lg:h-2/5" />
 
@@ -162,7 +162,7 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
   </section>
 
-  <section class="bg-vertClair -mx-[20px] py-5 sm:py-10 sm:-mx-[100px] md:mt-20">
+  <section class="bg-vertClair py-5 sm:py-10 sm:-mx-[100px] md:mt-20">
     <div class="text-center">
       <h2 class="sm:text-lg">Suivez les infos avec notre Newsletter</h2>
       <div class="w-[40vh] sm:w-[58vh] h-1 bg-bleuTurquoise rounded-xl mx-auto mt-2"></div>

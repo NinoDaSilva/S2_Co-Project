@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <div>
+  <div class="sm:-mx-[100px]">
     <div>
       <h1>{{ title }}</h1>
       <img v-if="(imgSndAlt, imgSndPath)" :src="imgSndPath" :alt="imgSndAlt" />

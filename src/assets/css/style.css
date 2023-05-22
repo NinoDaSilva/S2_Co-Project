@@ -12,9 +12,6 @@
     font-size: 1.375rem;
     background-color: #fafafa;
   }
-  main {
-    padding: 30px;
-  }
   h1, h2, h3 {
    font-weight: bold;
    color: #413b3b;
@@ -26,16 +23,14 @@
     font-size: 0.875rem;
     line-height: 1rem;
   }
-  main {
-    padding: 20px;
-    padding-bottom: 0;
+  section {
+    padding-inline: 30px;
   }
 }
 
 @media (min-width: 1024px) { 
   main {
     padding-inline: 100px;
-    padding-bottom: 0;
   }
 }
 
