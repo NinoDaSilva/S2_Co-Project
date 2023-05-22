@@ -25,9 +25,9 @@ watch(y, (y, oldY) => {
   <header
     :class="{
       '!-translate-y-full !bg-transparent': !dirTop,
-      '!bg-transparent lg:!bg-white': underLimit
+      '!bg-white': underLimit
     }"
-    class="bg-blanc bg-opacity-80 fixed z-20 flex w-full translate-y-0 items-center justify-between px-6 py-2 transition-all duration-300 ease-in-out text-sm xl:text-lg"
+    class="bg-blanc bg-opacity-80 fixed z-50 flex w-full translate-y-0 items-center justify-between px-6 py-2 transition-all duration-300 ease-in-out text-sm xl:text-lg"
   >
     <div class="mr-8">
       <a href="/">
