@@ -19,25 +19,31 @@ import Hero from '@/components/Hero.vue'
         <label class="form-label--home" for="last-name">
           Nom
         </label>
-        <input class="form-champ bg-bleuTurquoise"
-          id="last-name" type="text" placeholder="Entrez votre nom">
+        <input class="form-champ border-bleuTurquoise"
+          id="last-name" type="text" placeholder="Entrez votre nom" required autocomplete="last-name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="first-name">
           Prénom
         </label>
-        <input class="form-champ bg-bleuTurquoise"
-          id="first-name" type="text" placeholder="Entrez votre prénom">
+        <input class="form-champ border-bleuTurquoise"
+          id="first-name" type="text" placeholder="Entrez votre prénom" autocomplete="first-name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="email">
           Mail
         </label>
-        <input class="form-champ bg-bleuTurquoise"
-          id="email" type="email" placeholder="Entrez votre adresse mail">
+        <input class="form-champ border-bleuTurquoise"
+          id="email" type="email" placeholder="Entrez votre adresse mail" required autocomplete="email">
+      </div>
+      <div class="mb-4">
+        <label class="form-label--home" for="message">
+          Message
+        </label>
+        <textarea class="form-champ border-bleuTurquoise rounded-3xl leading-6 pt-4" name="message" id="message" rows="6" placeholder="Saisissez votre message"></textarea>
       </div>
       <div class="mt-5 items-center">
-        <input class="mr-3 sm:mr-5" id="confidential" type="checkbox">
+        <input class="mr-3 sm:mr-5" id="confidential" type="checkbox" required>
         <label for="confidential">J'accepte <RouterLink to="/pages/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">

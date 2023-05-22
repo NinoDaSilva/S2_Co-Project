@@ -71,6 +71,6 @@
     @apply sm:text-sm font-bold;
   }
   .form-champ {
-    @apply bg-transparent border border-vertFonce rounded-full w-full py-2.5 px-6 leading-tight focus:outline-vert focus:scale-[1.01] mt-1;
+    @apply duration-150 bg-transparent border-2 border-vertFonce rounded-full w-full py-2.5 px-6 max-sm:leading-tight focus:outline-vert focus:scale-[1.01] mt-1;
   }
 }
