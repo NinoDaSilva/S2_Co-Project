@@ -22,7 +22,7 @@ import CardProduit from '@/components/CardProduit.vue'
   >
   </Hero>
 
-  <div class="text-center">
+  <div class="text-center mt-10">
     <h2 class="text-2xs lg:text-xl">Vert, écolo et proche de chez vous !</h2>
     <h1 class="font-specific text-xs mt-1 sm:mt-0 lg:text-2xl">Goût local</h1>
   </div>
