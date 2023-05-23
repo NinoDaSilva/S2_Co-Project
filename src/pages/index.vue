@@ -28,7 +28,7 @@ import CardProduit from '@/components/CardProduit.vue'
   </div>
 
   <section class="sm:mb-28">
-    <div class="parent-block-home">
+    <article class="parent-block-home">
       <CarotteIcon class="icon-home"/>
       <RouterLink to="/partenaires" class="block-home">
         <div>
@@ -40,7 +40,7 @@ import CardProduit from '@/components/CardProduit.vue'
         </div>
         <ArrowIcon class="block-home--arrow" />
       </RouterLink>
-    </div>
+    </article>
 
     <div class="text-brun font-bold sm:text-sm xl:text-lg sm:ml-32 sm:mt-14">
       <div class="ml-8">
@@ -54,7 +54,7 @@ import CardProduit from '@/components/CardProduit.vue'
       </div>
     </div>
 
-    <div class="parent-block-home">
+    <article class="parent-block-home">
       <RecetteIcon class="icon-home"/>
       <RouterLink to="/recettes" class="block-home">
         <p>
@@ -63,7 +63,7 @@ import CardProduit from '@/components/CardProduit.vue'
         </p>
         <ArrowIcon class="block-home--arrow" />
       </RouterLink>
-    </div>
+    </article>
   </section>
 
   <section class="sm:mb-10">
@@ -128,7 +128,7 @@ import CardProduit from '@/components/CardProduit.vue'
   </section>
 
   <section>
-    <div class="parent-block-home">
+    <article class="parent-block-home">
       <JournalIcon class="icon-home"/>
       <RouterLink to="/events" class="block-home bg-vertClair">
         <p>
@@ -137,7 +137,7 @@ import CardProduit from '@/components/CardProduit.vue'
         </p>
         <ArrowIcon class="block-home--arrow" />
       </RouterLink>
-    </div>
+    </article>
 
     <div class="text-brun font-bold sm:ml-10 sm:mt-14">
       <div class="ml-6">
@@ -151,13 +151,13 @@ import CardProduit from '@/components/CardProduit.vue'
       </div>
     </div>
 
-    <div class="parent-block-home">
+    <article class="parent-block-home">
       <SanteIcon class="icon-home"/>
       <RouterLink to="/conseils" class="block-home bg-vertClair">
         <p>On vous propose quelques conseils afin de mieux consommer et adapter vos habitudes.</p>
         <ArrowIcon class="block-home--arrow" />
       </RouterLink>
-    </div>
+    </article>
   </section>
 
   <section class="bg-vertClair py-5 sm:py-10 sm:-mx-[100px] md:mt-20">
