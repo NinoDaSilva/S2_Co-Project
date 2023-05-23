@@ -7,7 +7,9 @@ import FooterPage from '@/components/FooterPage.vue'
 <template>
   <HeaderPage />
   <main>
-    <RouterView />
+    <Suspense>
+      <RouterView />
+    </Suspense>
   </main>
   <FooterPage />
 </template>

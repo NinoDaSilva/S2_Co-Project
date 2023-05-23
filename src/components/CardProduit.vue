@@ -1,25 +1,23 @@
 <script setup lang="ts">
-const props = defineProps<{
-  id: number
-  title: string
-  imgPath: string
-  imgAlt: string
-}>()
+  import type { ProduitsResponse } from '@/pocketbase-types';
+  const props: ProduitsResponse = defineProps<ProduitsResponse>();
+
+  // import { pb } from '@/backend';
+  // const img0 = props.image[0];
+  // const urlImg0 = img0 && pb.getFileUrl(props, img0, { thumb: '400x400' });
 </script>
 
 <template>
   <div
     class="group/item max-w-[350px] max-h-[350px] flex justify-center items-center rounded-[30px] border-[6px] border-vertFonce overflow-hidden shadow-lg"
   >
-    <img
+    <img :src="img0" alt="photo produit"
       class="group-hover/item:opacity-30 ease-linear duration-200"
-      :src="imgPath"
-      :alt="imgAlt"
     />
     <h3
       class="invisible group-hover/item:visible absolute font-bold text-xl font-specific text-center"
     >
-      {{ title }}
+      {{ name }}
     </h3>
   </div>
 </template>

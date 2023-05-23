@@ -10,3 +10,8 @@ export async function OneEvent(id) {
     const record = await pb.collection('events').getOne(id) ;
     return record ;
     }
+
+export async function allProduits() {
+    const records = await pb.collection('produits').getFullList() ;
+    return records ;
+    }    

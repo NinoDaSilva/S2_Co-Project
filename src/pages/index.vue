@@ -10,6 +10,10 @@ import RecetteIcon from '@/components/icons/RecetteIcon.vue'
 import JournalIcon from '@/components/icons/JournalIcon.vue'
 import SanteIcon from '@/components/icons/SanteIcon.vue'
 import CardProduit from '@/components/CardProduit.vue'
+
+import { allProduits } from '@/backend'
+const produitListe = await allProduits()
+
 </script>
 
 <template>
@@ -81,13 +85,13 @@ import CardProduit from '@/components/CardProduit.vue'
 
     <div class="flex justify-between p-10 lg:px-40">
       <RouterLink to="/produits"
-        ><CardProduit :id="1" title="" imgPath="" imgAlt=""
+        ><CardProduit
       /></RouterLink>
       <RouterLink to="/produits"
-        ><CardProduit :id="2" title="" imgPath="" imgAlt=""
+        ><CardProduit
       /></RouterLink>
       <RouterLink to="/produits"
-        ><CardProduit :id="3" title="" imgPath="" imgAlt=""
+        ><CardProduit
       /></RouterLink>
     </div>
   </section>
