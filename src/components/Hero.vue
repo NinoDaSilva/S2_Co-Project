@@ -15,5 +15,6 @@ defineProps<{
       <!-- <img class="absolute z-0 top-0 left-0" v-if="(imgSndAlt, imgSndPath)" :src="imgSndPath" :alt="imgSndAlt" /> -->
       <h1 class="title-head">{{ title }}</h1>
     </div>
+    <div class="underligne w-full rounded-none"></div>
   </div>
 </template>
