@@ -17,6 +17,8 @@ import CardProduit from '@/components/CardProduit.vue'
     title="Découvrez nos produits 100% locaux !"
     imgPath="/img/hero/accueil.webp"
     imgAlt="Image bannière page d'accueil"
+    imgSndPath="/img/hero/planche_bois.webp"
+    imgSndAlt="Planche en bois"
   >
   </Hero>
 
