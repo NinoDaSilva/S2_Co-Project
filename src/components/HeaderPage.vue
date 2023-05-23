@@ -31,7 +31,7 @@ watch(y, (y, oldY) => {
   >
     <div class="mr-8">
       <a href="/">
-        <GoutLocalLogo class="w-[64px] h-[64px] sm:w-[75px] sm:h-[75px]" />
+        <GoutLocalLogo class="w-[54px] h-[54px] sm:w-[75px] sm:h-[75px]" />
       </a>
     </div>
 
@@ -97,7 +97,7 @@ watch(y, (y, oldY) => {
       :class="{ '!visible opacity-100 text-blanc': menuIsOpen }"
     >
       <RouterLink
-        class="menu-link max-lg:mt-[2.8vh] max-lg:ml-3"
+        class="menu-link max-sm:pt-0 max-lg:mt-[2.8vh] max-lg:ml-3"
         to="/panier"
         @click="closeMenu"
         ><PanierIcon
