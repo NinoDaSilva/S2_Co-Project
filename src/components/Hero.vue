@@ -11,8 +11,8 @@ defineProps<{
 <template>
   <div class="relative z-0 sm:-mx-[100px]">
     <img :src="imgPath" :alt="imgAlt" />
-    <div class="absolute">
-      <h1 class="text-center">{{ title }}</h1>
+    <div class="absolute left-[20%] right-[20%] bottom-3 sm:bottom-[30%] lg:w-[1035px]">
+      <h1 class="text-center text-blanc leading-tight text-sm sm:text-lg md:text-3xl xl:text-4xl">{{ title }}</h1>
       <img v-if="(imgSndAlt, imgSndPath)" :src="imgSndPath" :alt="imgSndAlt" />
     </div>
   </div>
