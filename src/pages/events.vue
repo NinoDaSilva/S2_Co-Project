@@ -3,8 +3,14 @@ import {useHead} from '@unhead/vue'
 useHead ({
   title: 'Evenements'
 }) 
+import Hero from '@/components/Hero.vue'
 </script>
 
 <template>
-  <h1>Events</h1>
+    <Hero
+    title="Calendrier des évènements"
+    imgPath="/img/hero/events.webp"
+    imgAlt="Image bannière page evenements"
+  >
+  </Hero>
 </template>

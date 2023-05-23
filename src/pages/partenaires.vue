@@ -3,8 +3,14 @@ import {useHead} from '@unhead/vue'
 useHead ({
   title: 'Nos partenaires'
 }) 
+import Hero from '@/components/Hero.vue'
 </script>
 
 <template>
-  <h1>partenaires</h1>
+    <Hero
+    title="Nos partenaires"
+    imgPath="/img/hero/partenaires.webp"
+    imgAlt="Image bannière page partenaires"
+  >
+  </Hero>
 </template>

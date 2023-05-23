@@ -9,14 +9,10 @@ import Hero from '@/components/Hero.vue'
 
 <template>
   <Hero
-    class="z-0"
-    title="Contact"
-    imgPath=""
-    imgAlt="Image bannière page d'accueil"
+    title="Nous contacter"
+    imgPath="/img/hero/contact.webp"
+    imgAlt="Image bannière page contact"
   >
-    <template>
-      <div></div>
-    </template>
   </Hero>
 
   <form class="max-w-md md:max-w-xl mx-auto px-8 pt-6 mb-8 mt-4 sm:mt-8 sm:mb-12">

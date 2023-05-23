@@ -9,9 +9,8 @@ import ConnexionIcon from '@/components/icons/ConnexionIcon.vue';
 
 <template>
   <Hero
-    class="z-0"
     title="Se connecter"
-    imgPath=""
+    imgPath="/img/hero/connexion.webp"
     imgAlt="Image bannière page connexion"
   >
     <template>

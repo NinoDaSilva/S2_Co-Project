@@ -3,12 +3,16 @@ import {useHead} from '@unhead/vue'
 useHead ({
   title: 'A propos'
 }) 
+import Hero from '@/components/Hero.vue'
 </script>
 
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <Hero
+    title="Qui sommes-nous ?"
+    imgPath="/img/hero/about.webp"
+    imgAlt="Image bannière page en savoir plus"
+  >
+  </Hero>
 </template>
 
 <style>

@@ -68,4 +68,8 @@
   .form-champ {
     @apply duration-150 bg-transparent border-2 border-vertFonce rounded-full w-full py-2.5 px-6 max-sm:leading-tight focus:outline-vert focus:scale-[1.01] mt-1;
   }
+  .title-head {
+    @apply text-center text-blanc font-title font-extrabold leading-tight text-sm sm:text-lg md:text-3xl xl:text-4xl;
+    text-shadow: 0px 5px 1px #014B30;
+  }
 }
