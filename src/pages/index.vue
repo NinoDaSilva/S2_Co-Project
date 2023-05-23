@@ -10,9 +10,7 @@ import RecetteIcon from '@/components/icons/RecetteIcon.vue'
 import JournalIcon from '@/components/icons/JournalIcon.vue'
 import SanteIcon from '@/components/icons/SanteIcon.vue'
 import CardProduit from '@/components/CardProduit.vue'
-
-import { allProduits } from '@/backend'
-const produitListe = await allProduits()
+import btn from '@/components/btn.vue';
 
 </script>
 
@@ -120,13 +118,13 @@ const produitListe = await allProduits()
       </div>
     </div>
 
-    <div class="mt-6 sm:mt-10 md:mt-14 sm:ml-8 md:flex max-sm:text-center">
+    <div class="items-center mt-6 sm:mt-10 md:mt-14 sm:ml-8 lg:flex max-lg:text-center">
       <div class="ml-10 mb-4">
         <p class="-ml-10 font-bold">Pour en savoir plus, nous vous invitons à cliquer</p>
-        <div class="max-sm:hidden underligne w-full sm:w-[50vh]"></div>
+        <div class="max-md:hidden underligne w-full sm:w-[50vh] max-lg:mx-auto"></div>
       </div>
-      <RouterLink to="/partenaires" class="md:ml-10 max-md:text-center">
-        <p>juste ici</p>
+      <RouterLink to="/partenaires" class="lg:ml-12">
+        <div class="bg-vertFonce w-fit mx-auto text-blanc font-Subheading py-2 px-10 lg:px-12 rounded-full shadow-md hover:scale-[1.02] duration-300">juste ici</div>
       </RouterLink>
     </div>
   </section>
@@ -197,9 +195,7 @@ const produitListe = await allProduits()
         <label for="confidential">J'accepte <RouterLink to="/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
-        <button class="bg-vertFonce text-blanc font-Subheading py-2 px-10 sm:px-16 rounded-full" type="submit">
-          Envoyez
-        </button>
+        <btn text="Envoyez" class="bg-vertFonce lg:px-12"/>
       </div>
     </form>
   </section>

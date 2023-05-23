@@ -5,6 +5,7 @@ useHead ({
 }) 
 
 import Hero from '@/components/Hero.vue'
+import btn from '@/components/btn.vue';
 </script>
 
 <template>
@@ -48,9 +49,7 @@ import Hero from '@/components/Hero.vue'
         <label for="confidential">J'accepte <RouterLink to="/pages/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
-        <button class="bg-bleuTurquoise text-blanc font-Subheading py-2 px-10 sm:px-16 rounded-full shadow-md hover:scale-[1.02] duration-300" type="submit">
-          Envoyez
-        </button>
+        <btn text="Envoyez" class="lg:px-12"/>
       </div>
     </form>
 </template>
