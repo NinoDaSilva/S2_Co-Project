@@ -70,7 +70,7 @@ watch(y, (y, oldY) => {
           >
         </li>
         <li>
-          <RouterLink class="menu-link" to="/recettes" @click="closeMenu"
+          <RouterLink class="menu-link" to="/recettes/recettes" @click="closeMenu"
             >Nos recettes</RouterLink
           >
         </li>
@@ -80,8 +80,8 @@ watch(y, (y, oldY) => {
           >
         </li>
         <li>
-          <RouterLink class="menu-link" to="/events/events" @click="closeMenu"
-            >Évènements</RouterLink
+          <RouterLink class="menu-link" to="/events" @click="closeMenu"
+            >Événements</RouterLink
           >
         </li>
         <li>
