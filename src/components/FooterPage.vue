@@ -45,7 +45,7 @@ import GoutLocalLogo from './icons/GoutLocalLogo.vue'
                 aria-label="instagram"
                 class="items-center max-md:justify-center sm:flex sm:ml-2 mb-5"
               >
-                <InstagramIcon />
+                <InstagramIcon class="w-[40px]"/>
                 <label class="social-link">Instagram</label>
               </a>
             </li>
