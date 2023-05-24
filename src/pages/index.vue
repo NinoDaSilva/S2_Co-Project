@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import {useHead} from '@unhead/vue'
-useHead ({
-  title: 'Accueil'
-}) 
 import Hero from '@/components/Hero.vue'
 import ArrowIcon from '@/components/icons/ArrowIcon.vue'
 import CarotteIcon from '@/components/icons/CarotteIcon.vue'
@@ -11,6 +7,15 @@ import JournalIcon from '@/components/icons/JournalIcon.vue'
 import SanteIcon from '@/components/icons/SanteIcon.vue'
 import CardProduit from '@/components/CardProduit.vue'
 import btn from '@/components/btn.vue';
+
+import { allProduits } from '@/backend';
+//
+import {useHead} from '@unhead/vue'
+useHead ({
+  title: 'Accueil'
+}) 
+//
+const produitListe = await allProduits();
 
 </script>
 
@@ -82,15 +87,15 @@ import btn from '@/components/btn.vue';
     </div>
 
     <div class="flex space-x-4 py-10 justify-between mx-auto max-w-[1300px]">
-      <RouterLink to="/produits"
-        ><CardProduit
-      /></RouterLink>
-      <RouterLink to="/produits"
-        ><CardProduit
-      /></RouterLink>
-      <RouterLink to="/produits"
-        ><CardProduit
-      /></RouterLink>
+      <RouterLink to="/produits">
+        <CardProduit v-bind="produitListe[0]"/>
+      </RouterLink>
+      <RouterLink to="/produits">
+        <CardProduit v-bind="produitListe[1]"/>
+      </RouterLink>
+      <RouterLink to="/produits">
+        <CardProduit v-bind="produitListe[2]"/>
+      </RouterLink>
     </div>
   </section>
 

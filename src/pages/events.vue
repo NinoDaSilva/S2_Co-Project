@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import Hero from '@/components/Hero.vue'
+import CardEvents from '@/components/CardEvents.vue'
+import { allEvents } from '@/backend';
+//
 import {useHead} from '@unhead/vue'
 useHead ({
   title: 'Événements'
 }) 
-import Hero from '@/components/Hero.vue'
-import CardEvents from '@/components/CardEvents.vue'
-//import { allEvents } from '@/backend';
-//const eventsListe = await allEvents();
+//
+const eventsListe = await allEvents();
 </script>
 
 <template>

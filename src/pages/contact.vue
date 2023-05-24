@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import Hero from '@/components/Hero.vue'
+import btn from '@/components/btn.vue';
+//
 import {useHead} from '@unhead/vue'
 useHead ({
   title: 'Contact'
 }) 
-
-import Hero from '@/components/Hero.vue'
-import btn from '@/components/btn.vue';
+//
 </script>
 
 <template>

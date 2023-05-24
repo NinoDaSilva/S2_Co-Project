@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import Hero from '@/components/Hero.vue'
+import ConnexionIcon from '@/components/icons/ConnexionIcon.vue';
+//
 import {useHead} from '@unhead/vue'
 useHead ({
   title: 'Connexion'
 }) 
-import Hero from '@/components/Hero.vue'
-import ConnexionIcon from '@/components/icons/ConnexionIcon.vue';
+//
 </script>
 
 <template>

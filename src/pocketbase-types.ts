@@ -36,7 +36,7 @@ export type EventsRecord = {
 	title?: string
 	image?: string
 	description?: string
-	date?: IsoDateString
+	date?: string
 }
 
 export enum ProduitsTypeOptions {
