@@ -86,12 +86,11 @@ const produitListe = await allProduits();
       </div>
     </div>
 
-    <!-- <div class="flex space-x-4 py-10 justify-between mx-auto max-w-[1300px]">
-      <RouterLink to="/produits">
-        <CardProduit v-for="produit of produitListe" :v-key="produit.id" v-bind="{ ...produit }"/>
-      </RouterLink>
+    
+    <RouterLink to="/produits" class="flex space-x-8 py-10 justify-between mx-auto max-w-[1300px]">
+      <CardProduit v-for="produit in produitListe.slice(0, 3)" :v-key="produit.id" v-bind="{ ...produit }"/>
+    </RouterLink>
       
-    </div> -->
   </section>
 
   <section class="bg-brunClair tracking-wide sm:px-20 sm:-mx-[100px] p-4 py-6 sm:p-10 xl:px-20">
