@@ -47,12 +47,12 @@ import btn from '@/components/btn.vue';
     <div class="text-brun font-bold sm:text-sm xl:text-lg sm:ml-32 sm:mt-14 lg:mb-40">
       <div class="ml-8">
         <p class="-ml-8">Vous ne savez pas quoi cuisiner ?</p>
-        <div class="underligne w-[20vh] sm:w-[40vh]"></div>
+        <div class="underligne w-[18vh] sm:w-[28vh] xl:w-[33vh]"></div>
       </div>
 
       <div class="ml-40 sm:ml-60">
         <p class="-ml-8 mt-4">Pas de problème !</p>
-        <div class="underligne w-[10vh] sm:w-[22vh]"></div>
+        <div class="underligne w-[10vh] sm:w-[15vh] xl:w-[18vh]"></div>
       </div>
     </div>
 
@@ -68,20 +68,20 @@ import btn from '@/components/btn.vue';
     </article>
   </section>
 
-  <section class="sm:mb-10">
+  <section class="sm:mb-10 sm:mx-10">
     <div class="sm:mb-10 xl:text-xl">
       <div class="ml-8">
         <h2 class="-ml-8">Des produit frais</h2>
-        <div class="underligne w-[10vh] sm:w-[20vh]"></div>
+        <div class="underligne w-[10vh] sm:w-[15vh] lg:w-[20vh]"></div>
       </div>
 
       <div class="ml-24 mt-4 sm:ml-40">
         <h2 class="-ml-5 sm:-ml-8">et de saison !</h2>
-        <div class="underligne w-[8vh] sm:w-[15vh]"></div>
+        <div class="underligne w-[8vh] sm:w-[12vh] lg:w-[15vh]"></div>
       </div>
     </div>
 
-    <div class="flex justify-between p-10 lg:px-40">
+    <div class="flex space-x-4 py-10 justify-between mx-auto max-w-[1300px]">
       <RouterLink to="/produits"
         ><CardProduit
       /></RouterLink>
