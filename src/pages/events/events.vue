@@ -4,6 +4,7 @@ useHead ({
   title: 'Evenements'
 }) 
 import Hero from '@/components/Hero.vue'
+import CardEvents from '@/components/CardEvents.vue'
 </script>
 
 <template>
@@ -13,4 +14,5 @@ import Hero from '@/components/Hero.vue'
     imgAlt="Image bannière page evenements"
   >
   </Hero>
+  <CardEvents/>
 </template>
