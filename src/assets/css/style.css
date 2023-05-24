@@ -16,6 +16,9 @@
    font-weight: bold;
    color: #413b3b;
   }
+  h2 {
+    @apply sm:text-lg lg:text-xl
+  }
 }
 
 @media (max-width: 640px) { 
