@@ -55,6 +55,7 @@ export type ProduitsRecord = {
 	image?: string
 	type?: ProduitsTypeOptions
 	saison?: ProduitsSaisonOptions[]
+	disponible?: boolean
 }
 
 export type UsersRecord = {
