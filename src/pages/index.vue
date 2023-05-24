@@ -44,7 +44,7 @@ import btn from '@/components/btn.vue';
       </RouterLink>
     </article>
 
-    <div class="text-brun font-bold sm:text-sm xl:text-lg sm:ml-32 sm:mt-14">
+    <div class="text-brun font-bold sm:text-sm xl:text-lg sm:ml-32 sm:mt-14 lg:mb-40">
       <div class="ml-8">
         <p class="-ml-8">Vous ne savez pas quoi cuisiner ?</p>
         <div class="underligne w-[20vh] sm:w-[40vh]"></div>
@@ -141,7 +141,7 @@ import btn from '@/components/btn.vue';
       </RouterLink>
     </article>
 
-    <div class="text-brun font-bold sm:ml-10 sm:mt-14">
+    <div class="text-brun font-bold sm:ml-20 sm:mt-14 md:ml-32 lg:mb-40">
       <div class="ml-6">
         <p class="-ml-6">Besoins de conseils pour mieux consommer ? </p>
         <div class="underligne w-[32vh] sm:w-[48vh]"></div>

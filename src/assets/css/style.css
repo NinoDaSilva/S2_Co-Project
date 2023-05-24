@@ -60,7 +60,7 @@
     @apply -mr-10 -mt-10 z-10 md:-mr-16 lg:-mr-28 lg:-mt-20 max-w-[85px] md:max-w-[120px] lg:max-w-[200px] ;
   }
   .parent-block-home {
-    @apply flex md:px-10 justify-center mt-14 mb-10 lg:mt-32 hover:scale-[1.02] duration-300;
+    @apply flex md:px-10 justify-center mt-14 mb-10 sm:mb-24 lg:mt-32 hover:scale-[1.02] duration-300;
   }
   .underligne {
     @apply w-[14vh] h-1 bg-vertFonce rounded-xl;
