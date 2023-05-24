@@ -49,4 +49,11 @@ import Hero from '@/components/Hero.vue'
       </div>
     </div>
   </section>
+
+  <section class="class=sm:mx-10 md:my-32">
+    <div class="ml-10 mb-4">
+      <h2 class="-ml-10">Rechercher les producteurs locaux près de chez vous !</h2>
+      <div class="max-sm:hidden underligne bg-vertBleu sm:w-[50vh] lg:w-[64vh]"></div>
+    </div>
+  </section>
 </template>
