@@ -54,7 +54,7 @@ export type ProduitsRecord = {
 	name?: string
 	image?: string
 	type?: ProduitsTypeOptions
-	saison?: ProduitsSaisonOptions[]
+	saison?: ProduitsSaisonOptions
 	disponible?: boolean
 }
 

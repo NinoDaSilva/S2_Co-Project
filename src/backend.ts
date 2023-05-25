@@ -23,42 +23,42 @@ export async function allProduits() {
 
 
 export async function FruitsEte() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "été" && type: "fruit"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "été" && type = "fruit"', sort: 'disponible'}) ;
     return records ;
 }
 
 export async function FruitsPrintemps() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "printemps" && type: "fruit"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "printemps" && type = "fruit"', sort: 'disponible'}) ;
     return records ;
 }    
 
 export async function FruitsAutomne() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "automne" && type: "fruit"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "automne" && type = "fruit"', sort: 'disponible'}) ;
     return records ;
 }    
 
 export async function FruitsHiver() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "hiver" && type: "fruit"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saiso = "hiver" && type = "fruit"', sort: 'disponible'}) ;
     return records ;
 }    
 
 
 export async function LegumesEte() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "été" && type: "légume"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "été" && type = "légume"', sort: 'disponible'}) ;
     return records ;
 }   
 
 export async function LegumesPrintemps() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "printemps" && type: "légume"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "printemps" && type = "légume"', sort: 'disponible'}) ;
     return records ;
 }    
 
 export async function LegumesAutomne() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "automne" && type: "légume"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "automne" && type = "légume"', sort: 'disponible'}) ;
     return records ;
 }    
 
 export async function LegumesHiver() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison: "hiver" && type: "légume"'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "hiver" && type = "légume"', sort: 'disponible'}) ;
     return records ;
 }    
