@@ -21,10 +21,10 @@ const variantClass = {
     default: 'text-vertFonce border-vertFonce bg-brunClair',
     secondary: 'text-blanc bg-vertFonce border-brunClair',
 }
-const cont = document.getElementById('cont')
-if (props.variant === 'secondary') {
-    cont.classList.add('order-last');
-    }
+// const cont = document.getElementById('cont')
+// if (props.variant === 'secondary') {
+//     cont.classList.add('order-last');
+//     }
 </script>
 
 <template>
