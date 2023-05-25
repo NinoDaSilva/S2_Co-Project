@@ -32,6 +32,11 @@ const legumesHiver = await LegumesHiver();
   >
   </Hero>
 
+  <div class="mt-10 sm:mt-20 max-lg:mx-8 md:mb-28">
+    <h2 class="mb-3 sm:mb-6 max-w-3xl">Découvrez et choisissez des produits qui vous intéresse et de saison juste ici !</h2>
+    <p>La région Bourgogne-Franche-Comté est connu pour être la huitième région de France à être engagée dans la production de produits bio de fruits et légumes de saison qui plairons à tout le monde !</p>
+  </div>
+
   <section class="mb-10 mt-10 sm:ml-10 lg:ml-0 duration-300">
     <div>
       <h2 class="">Les fruits de saison</h2>
