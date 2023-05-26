@@ -1,12 +1,4 @@
 <script setup lang="ts">
-import EmballageIcon from './icons/EmballageIcon.vue';
-import NourritureIcon from './icons/NourritureIcon.vue';
-import NourritureSaineIcon from './icons/Nourriture-saineIcon.vue';
-import PanierLegumesIcon from './icons/Panier-legumesIcon.vue';
-import PommeQualiteIcon from './icons/Pomme-qualiteIcon.vue';
-import PoubelleIcon from './icons/PoubelleIcon.vue';
-import SteakIcon from './icons/SteakIcon.vue';
-import VacheIcon from './icons/VacheIcon.vue';
 
 const props = withDefaults( 
 	defineProps<{
@@ -21,19 +13,17 @@ const variantClass = {
     default: 'text-vertFonce border-vertFonce bg-brunClair',
     secondary: 'text-blanc bg-vertFonce border-brunClair',
 }
-// const cont = document.getElementById('cont')
-// if (props.variant === 'secondary') {
-//     cont.classList.add('order-last');
-//     }
 </script>
 
 <template>
-    <div class="rounded-2xl p-10 flex justify-between items-center border-8"
+    <div class="rounded-3xl mx-3 my-5 py-5 px-5 flex justify-between items-center border-4 sm:mx-5 sm:px-10 sm:border-8 md:px-20 lg:mx-auto lg:my-8 max-w-[1300px]"
         :class="variantClass[props.variant]">
-        <div id="cont" class="flex items-center font-bold pl-10">
-            <span class="text-2xl font-title">{{ number }}</span>
-            <p class="ml-10 mt-2">{{ text }}</p>
+        <div class="flex items-center font-bold"
+            :class="{'order-last': props.variant === 'secondary'}">
+            <span class="text-2xl sm:text-4xl font-title">{{ number }}</span>
+            <p class="ml-5 mt-3 text-xs sm:ml-14 sm:text-xl">{{ text }}</p>
         </div>
-        img
+        <img :src="icon" alt="icon d'illustration" class="max-sm:w-[84px] max-w-[184px]"/>
+        
     </div>
 </template>
