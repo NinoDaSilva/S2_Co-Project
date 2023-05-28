@@ -93,14 +93,14 @@ onMounted(async () => {
         <div class="sm:col-span-2 sm:col-start-1 mt-4">
           <label for="email">Mail</label>
           <div class="mt-2">
-            <input v-model="email" type="email" name="email" id="email" autocomplete="email" placeholder="Entrez votre adresse mail"
+            <input v-model="email" type="email" name="email" id="email" autocomplete="email" placeholder="Entrez votre adresse mail" required
               class="form-champ border-bleuTurquoise">
           </div>
         </div>
         <div class="sm:col-span-2 sm:col-start-1 mt-4">
           <label for="password">Mot de passe</label>
           <div class="mt-2">
-            <input v-model="password" type="password" name="password" id="password" autocomplete="none" placeholder="Entrez votre mot de passe"
+            <input v-model="password" type="password" name="password" id="password" autocomplete="none" placeholder="Entrez votre mot de passe" required
               class="form-champ border-bleuTurquoise">
           </div>
         </div>
@@ -125,14 +125,14 @@ onMounted(async () => {
           <div class="sm:col-span-2 sm:col-start-1 mt-4">
             <label for="confirm_password">Confirmation du mot de passe</label>
             <div class="mt-2">
-              <input v-model="confirm_password" type="password" name="confirm_password" id="confirm_password" autocomplete="none" placeholder="Entrez votre mot de passe"
+              <input v-model="confirm_password" type="password" name="confirm_password" id="confirm_password" autocomplete="none" placeholder="Entrez votre mot de passe" required
                 class="form-champ border-bleuTurquoise">
             </div>
           </div>
           <div class="sm:col-span-2 sm:col-start-1 mt-4">
             <label for="firstName">Nom</label>
             <div class="mt-2">
-              <input v-model="firstName" type="text" name="firstName" id="firstName" autocomplete="first_name" placeholder="Entrer votre prénom"
+              <input v-model="firstName" type="text" name="firstName" id="firstName" autocomplete="first_name" placeholder="Entrer votre prénom" required
                 class="form-champ border-bleuTurquoise">
             </div>
           </div>
