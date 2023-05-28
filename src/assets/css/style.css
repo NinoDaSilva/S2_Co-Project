@@ -80,4 +80,10 @@
     contain: content;
     @apply max-w-[350px] max-h-[350px] flex justify-center items-center rounded-2xl border-2 border-vertFonce overflow-hidden shadow-lg sm:border-4 sm:rounded-3xl;
   }
+  .section-mentions {
+    @apply mt-10 sm:mt-20 sm:text-lg;
+  }
+  .section-mentions--titre {
+    @apply mb-3 sm:text-3xl sm:mb-5;
+  }
 }
