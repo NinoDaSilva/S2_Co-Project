@@ -22,7 +22,7 @@ useHead ({
         <ConnexionIcon class="w-1/3 md:w-2/5 mx-auto mb-5 sm:mb-10"/>
         <div class="py-2 sm:py-3">
             <label>Nom</label>
-            <input class="form-champ border-bleuTurquoise" type="text" id="name" placeholder="Entrez votre nom">
+            <input class="form-champ border-bleuTurquoise" type="text" id="name" placeholder="Entrez votre nom" required>
         </div>
         <div class="py-2 sm:py-3">
             <label>Prénom</label>
@@ -30,19 +30,23 @@ useHead ({
         </div>
         <div class="py-2 sm:py-3">
             <label>Mail</label>
-            <input class="form-champ border-bleuTurquoise" type="email" id="login" placeholder="Entrez votre adresse mail">
+            <input class="form-champ border-bleuTurquoise" type="email" id="login" placeholder="Entrez votre adresse mail" required>
         </div>
         <div class="py-2 sm:py-3">
             <label>Mot de passe</label>
-            <input class="form-champ border-bleuTurquoise" type="password" id="passwd" placeholder="Entrez votre mot de passe">
+            <input class="form-champ border-bleuTurquoise" type="password" id="passwd" placeholder="Entrez votre mot de passe" required>
         </div>
         <div class="py-2 sm:py-3">
             <label>Confirmation du mot de passe</label>
-            <input class="form-champ border-bleuTurquoise" type="password" id="passwd" placeholder="Confirmer votre mot de passe">
+            <input class="form-champ border-bleuTurquoise" type="password" id="confirm-passwd" placeholder="Confirmer votre mot de passe" required>
         </div>
         <div class="text-center mt-4 sm:mt-10">
             <button v-on:click="register()"><btn text="S'inscrire"/></button>
         </div>
+        <div class="text-center mt-6">
+        <p class="mb-2 sm:mb-1">Vous avez déjà un compte ?</p>
+        <RouterLink to="/connexion" class="link text-vertBleu">Se connecter</RouterLink>
+      </div>
     </form>
 </template>
 
@@ -53,9 +57,9 @@ export default {
       await pb.collection('users').create({
         email: document.getElementById("login").value,
         password: document.getElementById("passwd").value,
-        passwordConfirm: document.getElementById("passwd").value,
+        passwordConfirm: document.getElementById("confirm-passwd").value,
         name: document.getElementById("name").value,
-        first: document.getElementById("first-name").value,
+        first_name: document.getElementById("first-name").value,
       });
     }
   }

@@ -3,8 +3,10 @@
 */
 
 export enum Collections {
+	Etapes = "etapes",
 	Events = "events",
 	Produits = "produits",
+	Recettes = "recettes",
 	Users = "users",
 }
 
@@ -32,6 +34,12 @@ export type AuthSystemFields<T = never> = {
 
 // Record types for each collection
 
+export type EtapesRecord = {
+	numero?: number
+	description?: string
+	recette?: RecordIdString
+}
+
 export type EventsRecord = {
 	title?: string
 	image?: string
@@ -58,26 +66,39 @@ export type ProduitsRecord = {
 	disponible?: boolean
 }
 
+export type RecettesRecord = {
+	titre?: string
+	image?: string
+	favori?: boolean
+	temps?: number
+	nbr_personnes?: number
+}
+
 export type UsersRecord = {
-	name?: string
-	avatar?: string
+	first_name?: string
 }
 
 // Response types include system fields and match responses from the PocketBase API
+export type EtapesResponse<Texpand = unknown> = Required<EtapesRecord> & BaseSystemFields<Texpand>
 export type EventsResponse = Required<EventsRecord> & BaseSystemFields
 export type ProduitsResponse = Required<ProduitsRecord> & BaseSystemFields
+export type RecettesResponse = Required<RecettesRecord> & BaseSystemFields
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
+	etapes: EtapesRecord
 	events: EventsRecord
 	produits: ProduitsRecord
+	recettes: RecettesRecord
 	users: UsersRecord
 }
 
 export type CollectionResponses = {
+	etapes: EtapesResponse
 	events: EventsResponse
 	produits: ProduitsResponse
+	recettes: RecettesResponse
 	users: UsersResponse
 }

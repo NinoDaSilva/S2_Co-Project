@@ -3,6 +3,7 @@ export const pb = new PocketBase('http://127.0.0.1:8090');
 
 import type { EventsResponse } from '@/pocketbase-types';
 import type { ProduitsResponse } from '@/pocketbase-types';
+import type { UsersResponse } from '@/pocketbase-types';
 
 // Events
 export async function allEvents() {
@@ -62,3 +63,6 @@ export async function LegumesHiver() {
     const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "hiver" && type = "légume"', sort: 'disponible'}) ;
     return records ;
 }    
+
+// // Nom d'utlisateurs
+// export const currentUser = pb.collection('users').getOne<UsersResponse>('username') ;
