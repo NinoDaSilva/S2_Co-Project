@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Hero from '@/components/Hero.vue'
+import GoogleMaps from '@/components/GoogleMaps.vue';
 //
 import {useHead} from '@unhead/vue'
 useHead ({
@@ -57,5 +58,6 @@ useHead ({
       <h2 class="-ml-10">Rechercher les producteurs locaux près de chez vous !</h2>
       <div class="max-sm:hidden underligne bg-vertBleu sm:w-[50vh] lg:w-[64vh]"></div>
     </div>
+    <GoogleMaps/>
   </section>
 </template>
