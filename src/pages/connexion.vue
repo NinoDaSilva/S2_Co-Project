@@ -134,14 +134,14 @@ export default {
         <ConnexionIcon class="w-2/5 mx-auto mb-5"/>
         <h2 class="text-center">{{ loginMode ? "CONNEXION" : "INSCRIPTION" }}</h2>
         <div class="sm:col-span-2 sm:col-start-1 mt-4">
-          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Mail</label>
+          <label for="email" class="block font-medium leading-6 text-gray-900">Mail</label>
           <div class="mt-2">
             <input v-model="email" type="email" name="email" id="email" autocomplete="email" placeholder="Entrez votre adresse mail"
               class="form-champ border-bleuTurquoise">
           </div>
         </div>
         <div class="sm:col-span-2 sm:col-start-1 mt-4">
-          <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Mot de passe</label>
+          <label for="password" class="block font-medium leading-6 text-gray-900">Mot de passe</label>
           <div class="mt-2">
             <input v-model="password" type="password" name="password" id="password" autocomplete="none" placeholder="Entrez votre mot de passe"
               class="form-champ border-bleuTurquoise">
@@ -164,15 +164,15 @@ export default {
         </div>
         
         <div v-else>
-          <div class="sm:col-span-2 sm:col-start-1 mt-2">
-            <label for="confirm_password" class="block text-sm font-medium leading-6 text-gray-900">Comfirmation du mot de passe</label>
+          <div class="sm:col-span-2 sm:col-start-1 mt-4">
+            <label for="confirm_password" class="block font-medium leading-6 text-gray-900">Confirmation du mot de passe</label>
             <div class="mt-2">
               <input v-model="confirm_password" type="password" name="confirm_password" id="confirm_password" autocomplete="none" placeholder="Entrez votre mot de passe"
                 class="form-champ border-bleuTurquoise">
             </div>
           </div>
-          <div class="sm:col-span-2 sm:col-start-1 mt-2">
-            <label for="firstName" class="block text-sm font-medium leading-6 text-gray-900">Prénom</label>
+          <div class="sm:col-span-2 sm:col-start-1 mt-4">
+            <label for="firstName" class="block font-medium leading-6 text-gray-900">Prénom</label>
             <div class="mt-2">
               <input v-model="firstName" type="text" name="firstName" id="firstName" autocomplete="first_name" placeholder="Entrer votre prénom"
                 class="form-champ border-bleuTurquoise">
