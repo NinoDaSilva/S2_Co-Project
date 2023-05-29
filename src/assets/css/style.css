@@ -32,6 +32,12 @@
   }
 }
 
+@media (min-width: 640px) { 
+  main {
+    padding-inline: 20px;
+  }
+}
+
 @media (min-width: 1024px) { 
   main {
     padding-inline: 100px;
