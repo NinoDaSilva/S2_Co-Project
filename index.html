@@ -17,13 +17,13 @@
     <script>
       function sendEmail() {
         Email.send({
-          secureToken : "364cd433-86af-4aee-a42d-36ea4096258f",
-          To : 'ninoportos@gmail.com',
-          From : documet.getElementById("email").value,
+          SecureToken : "4dd2b1bd-093f-44d7-bd5f-4343c3a082df",
+          To : 'goutlocal@contact.com',
+          From : document.getElementById("email").value,
           Subject : "New insciption from " + document.getElementById("name").value,
           Body : "Name: " + document.getElementById("name").value
-            + "<br>First name: " + document.getElementById("first-name").value 
-            + "<br>Email: " + document.getElementById("email").value 
+            + "<br> First name: " + document.getElementById("first-name").value 
+            + "<br> Email: " + document.getElementById("email").value 
         }).then(
         message => alert("Merci pour votre inscription, celle-ci a bien été prise en compte")
       );

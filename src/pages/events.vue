@@ -33,21 +33,21 @@ const eventsListe = await allEvents();
           Nom
         </label>
         <input class="form-champ border-bleuTurquoise"
-          id="name" type="text" placeholder="Entrez votre nom" required>
+          id="name" type="text" placeholder="Entrez votre nom" required autocomplete="name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="first-name">
           Prénom
         </label>
         <input class="form-champ border-bleuTurquoise"
-          id="first-name" type="text" placeholder="Entrez votre prénom">
+          id="first-name" type="text" placeholder="Entrez votre prénom" autocomplete="first-name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="email">
           Mail
         </label>
         <input class="form-champ border-bleuTurquoise"
-          id="email" type="email" placeholder="Entrez votre adresse mail" required>
+          id="email" type="email" placeholder="Entrez votre adresse mail" required autocomplete="email">
       </div>
       <div class="mt-5 items-center">
         <input class="mr-3 sm:mr-5" id="confidential" type="checkbox" required>
