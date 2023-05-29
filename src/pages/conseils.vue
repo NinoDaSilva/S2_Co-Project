@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Hero from '@/components/Hero.vue'
 import CardConseils from '@/components/CardConseils.vue'
+import btn from '@/components/btn.vue';
 //
 import {useHead} from '@unhead/vue'
 useHead ({
@@ -64,4 +65,12 @@ useHead ({
 	  number="8"	  
     text="Composter ses déchets alimentaires"
     icon="img/conseils/dechetIcon.webp" />
+
+  <div class="max-sm:mx-5 sm:ml-10 text-center mb-10 mt-8 sm:mb-20 sm:mt-20">
+    <h2 class="max-md:mb-5 md:text-start sm:-ml-10">Pour en savoir plus, nous vous invitons à nous contacter en cliquant ci-dessous</h2>
+    <div class="max-md:hidden mb-8 underligne bg-vertBleu sm:w-full max-w-[100vh]"></div>
+    <RouterLink to="/contact">
+      <btn text="Nous contacter"/>
+    </RouterLink>
+  </div>
 </template>

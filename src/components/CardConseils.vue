@@ -23,7 +23,7 @@ const variantClass = {
             <span class="text-2xl sm:text-4xl font-title">{{ number }}</span>
             <p class="ml-5 mt-3 text-xs sm:ml-14 sm:text-xl">{{ text }}</p>
         </div>
-        <img :src="icon" alt="icon d'illustration" class="max-sm:w-[84px] max-w-[184px]"/>
+        <img :src="icon" alt="icon d'illustration" class="max-sm:w-[64px] max-w-[164px]"/>
         
     </div>
 </template>
