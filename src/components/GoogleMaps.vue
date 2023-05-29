@@ -5,13 +5,13 @@ import { GoogleMap, Marker, MarkerCluster } from 'vue3-google-map'
 export default defineComponent({
   components: { GoogleMap, Marker, MarkerCluster },
   setup() {
-    const center = { lat: 47.42463267366512, lng: 6.905441485714746 } // Gaec Voireuchon
+    const center = { lat: 47.42463267366512, lng: 6.905441485714746 }
 
     const locations = [
       { lat: 47.42463267366513, lng: 6.905441485714748 }, // Gaec Voireuchon
-      { lat: 47.74102471685159, lng: 6.6167847865846605 }, //L'éden de Célestine
-      { lat: 47.4374973867614, lng: 6.6838067893560975 }, //Georgel Philippe
-      { lat: 47.4744446959658, lng: 6.433263521718228 }, // Ferme d'Uzelle
+      { lat: 47.713885049787955, lng: 6.630637924654588 }, // L'éden de Célestine
+      { lat: 47.422667330111985, lng: 6.684211213665875 }, // Georgel Philippe
+      { lat: 47.463127134274266, lng: 6.439862927340599 }, // Ferme d'Uzelle
     ]
     return { center, locations }
   },
