@@ -13,5 +13,21 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          secureToken : "364cd433-86af-4aee-a42d-36ea4096258f",
+          To : 'ninoportos@gmail.com',
+          From : documet.getElementById("email").value,
+          Subject : "New insciption from " + document.getElementById("name").value,
+          Body : "Name: " + document.getElementById("name").value
+            + "<br>First name: " + document.getElementById("first-name").value 
+            + "<br>Email: " + document.getElementById("email").value 
+        }).then(
+        message => alert("Merci pour votre inscription, celle-ci a bien été prise en compte")
+      );
+      }
+    </script>
   </body>
 </html>

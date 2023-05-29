@@ -26,13 +26,14 @@ const eventsListe = await allEvents();
   <section class="mt-10 mb-10 sm:mb-20">
     <div class="underligne bg-bleuTurquoise mx-auto w-full sm:w-5/6"></div>
     <h2 class="max-sm:text-2xs text-center mt-8">Suivez les infos avec notre Newsletter</h2>
-    <form class="md:max-w-2xl mx-auto px-5 sm:p-14 sm:px-20 mt-8 sm:border-2 border-bleuTurquoise rounded-3xl">
+    <form onsubmit="sendEmail(); reset(); return false" 
+      class="md:max-w-2xl mx-auto px-5 sm:p-14 sm:px-20 mt-8 sm:border-2 border-bleuTurquoise rounded-3xl">
       <div class="mb-4">
-        <label class="form-label--home" for="last-name">
+        <label class="form-label--home" for="name">
           Nom
         </label>
         <input class="form-champ border-bleuTurquoise"
-          id="last-name" type="text" placeholder="Entrez votre nom">
+          id="name" type="text" placeholder="Entrez votre nom" required>
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="first-name">
@@ -46,15 +47,18 @@ const eventsListe = await allEvents();
           Mail
         </label>
         <input class="form-champ border-bleuTurquoise"
-          id="email" type="email" placeholder="Entrez votre adresse mail">
+          id="email" type="email" placeholder="Entrez votre adresse mail" required>
       </div>
       <div class="mt-5 items-center">
-        <input class="mr-3 sm:mr-5" id="confidential" type="checkbox">
+        <input class="mr-3 sm:mr-5" id="confidential" type="checkbox" required>
         <label for="confidential">J'accepte <RouterLink to="/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
-        <btn text="Envoyez" class="bg-bleuTurquoise lg:px-12"/>
+        <button type="submit">
+          <btn text="Envoyez" class="bg-bleuTurquoise lg:px-12"/>
+        </button>
       </div>
     </form>
   </section>
 </template>
+
