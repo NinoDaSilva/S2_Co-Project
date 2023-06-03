@@ -10,12 +10,11 @@ defineProps<{
 
 <template>
   <div class="relative z-0 sm:-mx-[100px]">
-    <img :src="imgPath" :alt="imgAlt" />
-    <div class="absolute left-[26%] right-[24%] bottom-4 sm:bottom-[30%] max-w-[1035px]">
-      <!-- <img class="absolute z-0 top-0 left-0" v-if="(imgSndAlt, imgSndPath)" :src="imgSndPath" :alt="imgSndAlt" /> -->
+    <img class="max-sm:h-[170px] w-full" :src="imgPath" :alt="imgAlt" />
+    <div class="absolute left-[16%] right-[14%] bottom-7 sm:bottom-[30%]">
       <h1 class="title-head">{{ title }}</h1>
+      <slot name="chapo"></slot>
     </div>
     <div class="underligne w-full rounded-none"></div>
-    <slot name="chapo"></slot>
   </div>
 </template>
