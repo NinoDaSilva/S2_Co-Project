@@ -16,5 +16,6 @@ defineProps<{
       <h1 class="title-head">{{ title }}</h1>
     </div>
     <div class="underligne w-full rounded-none"></div>
+    <slot name="chapo"></slot>
   </div>
 </template>
