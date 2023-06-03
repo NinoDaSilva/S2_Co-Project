@@ -33,6 +33,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .title-head {
+    text-shadow: 0px 3px 1px #014B30;
+  }
+  .title-head--recette {
+    text-shadow: 0px 2px 1px #014B30;
+  }
+}
+
 @media (min-width: 640px) { 
   main {
     padding-inline: 20px;
@@ -79,10 +88,16 @@
   .form-champ {
     @apply duration-150 bg-transparent border-2 border-vertFonce rounded-full w-full py-2.5 px-6 max-sm:leading-tight focus:outline-vert focus:scale-[1.01] mt-1;
   }
-  .title-head {
-    @apply text-center text-blanc font-title font-extrabold leading-tight text-sm sm:text-lg md:text-3xl xl:text-4xl;
+  .title-head,
+  .title-head--recette {
+    @apply text-center text-blanc font-title font-extrabold leading-tight text-base sm:text-lg md:text-3xl xl:text-4xl;
     text-shadow: 0px 5px 1px #014B30;
   }
+  .title-head--recette {
+    @apply text-center mt-2 sm:mt-4 text-xs sm:text-base xl:text-2xl font-primary font-bold;
+    text-shadow: 0px 4px 1px #014B30;
+  }
+
   .card-produit, 
   .card-recette {
     contain: content;
