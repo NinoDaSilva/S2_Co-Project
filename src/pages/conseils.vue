@@ -17,6 +17,11 @@ useHead ({
     imgAlt="Image bannière page conseils"
   >
   </Hero>
+  
+  <div class="max-sm:mx-5 sm:ml-10 lg:text-center mb-10 mt-8 sm:mb-20 sm:mt-20">
+    <h2 class="max-md:mb-5 md:text-start sm:-ml-10">Quelques conseils simples pour manger plus écolo et sain !</h2>
+    <div class="max-md:hidden mb-8 underligne bg-vertBleu sm:w-full max-w-[75vh]"></div>
+  </div>
 
   <CardConseils
     variant="default"
