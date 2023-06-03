@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import CardEvents from '@/components/CardEvents.vue';
-//
+import { uneRecette } from '@/backend';
+import recettesPage from '@/components/recettesPage.vue';
 
-//
+const props = defineProps<{
+  id: string
+}>();
+const recette = await uneRecette(props.id);
 </script>
 
 <template>
-  <div>
-  
-  </div>
+  <recettesPage v-bind="{ ...recette}" />
 </template>

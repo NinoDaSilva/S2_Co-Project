@@ -83,14 +83,18 @@
     @apply text-center text-blanc font-title font-extrabold leading-tight text-sm sm:text-lg md:text-3xl xl:text-4xl;
     text-shadow: 0px 5px 1px #014B30;
   }
-  .card-produit {
+  .card-produit, 
+  .card-recette {
     contain: content;
-    @apply max-w-[350px] max-h-[350px] flex justify-center items-center rounded-2xl border-2 border-vertFonce overflow-hidden shadow-lg sm:border-4 sm:rounded-3xl;
+    @apply hover:scale-[1.01] hover:shadow-2xl duration-300 max-w-[350px] max-h-[350px] flex justify-center items-center rounded-2xl border-2 border-vertFonce overflow-hidden shadow-lg sm:border-4 sm:rounded-3xl;
   }
   .section-mentions {
     @apply mt-10 sm:mt-20 sm:text-lg;
   }
   .section-mentions--titre {
     @apply mb-3 sm:text-3xl sm:mb-5;
+  }
+  .text-shadow {
+    text-shadow: 1px 4px 8px black;
   }
 }
