@@ -89,3 +89,15 @@ export async function uneRecette(id: string) {
     const record = await pb.collection('recettes').getOne<RecettesResponse>(id);
     return record
 }
+
+// Retourne les recettes de type "salée"
+export async function recetteSalee() {
+    const records = await pb.collection('recettes').getFullList<RecettesResponse>({filter: 'type = "salée"', sort: 'titre'});
+    return records
+}
+
+// Retourne les recettes de type "sucrée"
+export async function recetteSucree() {
+    const records = await pb.collection('recettes').getFullList<RecettesResponse>({filter: 'type = "sucrée"', sort: 'titre'});
+    return records
+}
