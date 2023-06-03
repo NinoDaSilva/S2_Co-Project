@@ -10,13 +10,14 @@ const props = withDefaults(
   { variant: 'default' }
 )
 const variantClass = {
-    default: 'text-vertFonce border-vertFonce bg-brunClair',
-    secondary: 'text-blanc bg-vertFonce border-brunClair',
+    default: 'text-vertFonce border-vertFonce bg-brunClair hover:bg-vert hover:text-blanc hover:border-brunClair',
+    secondary: 'text-blanc bg-vertFonce border-brunClair hover:border-vertFonce hover:bg-brunClair hover:text-vertFonce',
 }
 </script>
 
 <template>
-    <div class="rounded-3xl mx-3 my-5 py-5 px-5 flex justify-between items-center border-4 sm:mx-5 sm:px-10 sm:border-8 md:px-20 lg:mx-auto lg:my-8 max-w-[1300px]"
+    <div class="rounded-3xl mx-3 my-5 py-5 px-5 flex justify-between items-center border-4 sm:mx-5 sm:px-10 sm:border-8 md:px-20 lg:mx-auto lg:my-8 max-w-[1300px]
+        hover:shadow-lg hover:-skew-x-2 duration-300 ease-in-out"
         :class="variantClass[props.variant]">
         <div class="flex items-center font-bold"
             :class="{'order-last': props.variant === 'secondary'}">
