@@ -101,3 +101,10 @@ export async function recetteSucree() {
     const records = await pb.collection('recettes').getFullList<RecettesResponse>({filter: 'type = "sucrée"', sort: 'titre'});
     return records
 }
+
+// Retourne les étapes recettes
+export async function recetteEtapes(titre: string) {
+    const records = await pb.collection('recettes').getFirstListItem<RecettesResponse>(`titre = '${titre}'`);
+    return records
+}
+
