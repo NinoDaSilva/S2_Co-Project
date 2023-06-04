@@ -1,7 +1,8 @@
-<script setup lang="ts">
+<script setup>
 import Hero from '@/components/Hero.vue'
 import CardEvents from '@/components/CardEvents.vue'
-import { allEvents } from '@/backend';
+import { pb, allEvents } from '@/backend';
+import { ref } from 'vue';
 import btn from '@/components/btn.vue';
 //
 import {useHead} from '@unhead/vue'
@@ -10,6 +11,27 @@ useHead ({
 }) 
 //
 const eventsListe = await allEvents();
+
+// Fonction d'envoie de données vers pocketbase
+const email = ref("");
+const name = ref("");
+const first_name = ref("");
+
+const doInscription = async () => {
+    try {
+        const data = {
+            "name": name.value,
+            "first_name": first_name.value,
+            "email": email.value,
+            "autorization": true,
+        };
+        
+        const record = await pb.collection('newsletter').create(data);
+      }
+    catch (error) {
+        alert(error.message);
+    }
+}
 </script>
 
 <template>
@@ -32,21 +54,21 @@ const eventsListe = await allEvents();
         <label class="form-label--home" for="name">
           Nom
         </label>
-        <input class="form-champ border-bleuTurquoise"
+        <input v-model="name" class="form-champ border-bleuTurquoise"
           id="name" type="text" placeholder="Entrez votre nom" required autocomplete="name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="first-name">
           Prénom
         </label>
-        <input class="form-champ border-bleuTurquoise"
+        <input v-model="first_name" class="form-champ border-bleuTurquoise"
           id="first-name" type="text" placeholder="Entrez votre prénom" autocomplete="first-name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="email">
           Mail
         </label>
-        <input class="form-champ border-bleuTurquoise"
+        <input v-model="email" class="form-champ border-bleuTurquoise"
           id="email" type="email" placeholder="Entrez votre adresse mail" required autocomplete="email">
       </div>
       <div class="mt-5 items-center">
@@ -55,10 +77,9 @@ const eventsListe = await allEvents();
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
         <button type="submit">
-          <btn text="Envoyez" class="bg-bleuTurquoise lg:px-12"/>
+          <btn text="Envoyez" @click="doInscription" class="bg-bleuTurquoise lg:px-12"/>
         </button>
       </div>
     </form>
   </section>
 </template>
-

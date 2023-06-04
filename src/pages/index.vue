@@ -1,4 +1,5 @@
-<script setup lang="ts">
+<script setup>
+import { ref } from 'vue';
 import Hero from '@/components/Hero.vue'
 import ArrowIcon from '@/components/icons/ArrowIcon.vue'
 import CarotteIcon from '@/components/icons/CarotteIcon.vue'
@@ -8,7 +9,7 @@ import SanteIcon from '@/components/icons/SanteIcon.vue'
 import CardProduit from '@/components/CardProduit.vue'
 import btn from '@/components/btn.vue';
 
-import { allProduits } from '@/backend';
+import { pb, allProduits } from '@/backend';
 //
 import {useHead} from '@unhead/vue'
 useHead ({
@@ -17,6 +18,26 @@ useHead ({
 //
 const produitListe = await allProduits();
 
+// Fonction d'envoie de données vers pocketbase
+const email = ref("");
+const name = ref("");
+const first_name = ref("");
+
+const doInscription = async () => {
+    try {
+        const data = {
+            "name": name.value,
+            "first_name": first_name.value,
+            "email": email.value,
+            "autorization": true,
+        };
+        
+        const record = await pb.collection('newsletter').create(data);
+      }
+    catch (error) {
+        alert(error.message);
+    }
+}
 </script>
 
 <template>
@@ -172,29 +193,29 @@ const produitListe = await allProduits();
         <label class="form-label--home" for="last-name">
           Nom
         </label>
-        <input class="form-champ"
-          id="last-name" type="text" placeholder="Entrez votre nom">
+        <input v-model="name" class="form-champ"
+          id="last-name" type="text" placeholder="Entrez votre nom" required autocomplete="last-name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="first-name">
           Prénom
         </label>
-        <input class="form-champ"
-          id="first-name" type="text" placeholder="Entrez votre prénom">
+        <input v-model="first_name" class="form-champ"
+          id="first-name" type="text" placeholder="Entrez votre prénom" autocomplete="first-name">
       </div>
       <div class="mb-4">
         <label class="form-label--home" for="email">
           Mail
         </label>
-        <input class="form-champ"
-          id="email" type="email" placeholder="Entrez votre adresse mail">
+        <input v-model="email" class="form-champ"
+          id="email" type="email" placeholder="Entrez votre adresse mail" required autocomplete="email">
       </div>
       <div class="mt-5 items-center">
-        <input class="mr-3 sm:mr-5" id="confidential" type="checkbox">
+        <input class="mr-3 sm:mr-5" id="confidential" type="checkbox" required>
         <label for="confidential">J'accepte <RouterLink to="/mentions" class="link"><strong>la politique de confidentialité</strong></RouterLink></label>
       </div>
       <div class="flex items-center justify-center mt-6 sm:mt-10">
-        <btn text="Envoyez" class="bg-vertFonce lg:px-12"/>
+        <btn text="Envoyez" @click="doInscription" class="bg-vertFonce lg:px-12"/>
       </div>
     </form>
   </section>
