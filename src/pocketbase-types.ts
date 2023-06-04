@@ -5,6 +5,7 @@
 export enum Collections {
 	Contact = "contact",
 	Events = "events",
+	Newsletter = "newsletter",
 	Produits = "produits",
 	Recettes = "recettes",
 	Users = "users",
@@ -50,6 +51,13 @@ export type EventsRecord = {
 	date?: string
 }
 
+export type NewsletterRecord = {
+	name?: string
+	first_name?: string
+	email?: string
+	autorization?: boolean
+}
+
 export enum ProduitsTypeOptions {
 	"fruit" = "fruit",
 	"légume" = "légume",
@@ -91,6 +99,7 @@ export type RecettesRecord = {
 	etape_8?: string
 	etape_9?: string
 	etape_10?: string
+	ingredients?: RecordIdString[]
 }
 
 export enum UsersAccountOptions {
@@ -101,13 +110,15 @@ export type UsersRecord = {
 	first_name?: string
 	message?: RecordIdString[]
 	account?: UsersAccountOptions
+	newsletter?: boolean
 }
 
 // Response types include system fields and match responses from the PocketBase API
 export type ContactResponse<Texpand = unknown> = Required<ContactRecord> & BaseSystemFields<Texpand>
 export type EventsResponse = Required<EventsRecord> & BaseSystemFields
+export type NewsletterResponse = Required<NewsletterRecord> & BaseSystemFields
 export type ProduitsResponse = Required<ProduitsRecord> & BaseSystemFields
-export type RecettesResponse = Required<RecettesRecord> & BaseSystemFields
+export type RecettesResponse<Texpand = unknown> = Required<RecettesRecord> & BaseSystemFields<Texpand>
 export type UsersResponse<Texpand = unknown> = Required<UsersRecord> & AuthSystemFields<Texpand>
 
 // Types containing all Records and Responses, useful for creating typing helper functions
@@ -115,6 +126,7 @@ export type UsersResponse<Texpand = unknown> = Required<UsersRecord> & AuthSyste
 export type CollectionRecords = {
 	contact: ContactRecord
 	events: EventsRecord
+	newsletter: NewsletterRecord
 	produits: ProduitsRecord
 	recettes: RecettesRecord
 	users: UsersRecord
@@ -123,6 +135,7 @@ export type CollectionRecords = {
 export type CollectionResponses = {
 	contact: ContactResponse
 	events: EventsResponse
+	newsletter: NewsletterResponse
 	produits: ProduitsResponse
 	recettes: RecettesResponse
 	users: UsersResponse
