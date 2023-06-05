@@ -73,13 +73,15 @@ const urlImg0 = img && pb.getFileUrl(props, img, { thumb: '400x400' });
         <RecetteIcon class="max-md:hidden w-1/6 md:w-[300px] mb-60" />
     </div>
 
-    <section class="mt-10">
+    <section class="mt-10 md:mt-20 lg:mb-40">
         <div class="ml-10 mb-4">
             <h3 class="-ml-5">Ingrédients</h3>
             <div class="underligne bg-vertBleu max-sm:w-[8vh] max-w-[12vh]"></div>
       </div>
-      <div>
-        <!-- img -->
+      <div class="mt-8">
+        <li class="list-none">
+            {{ ingredients }}
+        </li>
       </div>
     </section>
 
