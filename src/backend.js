@@ -105,3 +105,4 @@ export async function recetteEtapes(titre) {
     const records = await pb.collection('recettes').getFirstListItem(`titre = '${titre}'`);
     return records
 }
+
