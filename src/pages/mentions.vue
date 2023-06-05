@@ -32,7 +32,7 @@ useHead ({
     <h2 class="section-mentions--titre">Utilisation et transmission de vos données personnelles</h2>
     <ol class="list-decimal ml-8">
       <li class="my-8">
-        <h3 class="font-normal">Les données collectées sur ce site sont utilisées pour les finalités suivantes :</h3>
+        <h3 class="font-medium">Les données collectées sur ce site sont utilisées pour les finalités suivantes :</h3>
         <ul class="list-disc ml-8 mt-4 mb-8">
           <li>L’envoie de newsletters</li>
           <li>L’amélioration de l’expérience utilisateur</li>
@@ -40,7 +40,7 @@ useHead ({
       </li>
 
       <li>
-        <h3 class="font-normal">Les données collectées sur ce site peuvent inclure :</h3>
+        <h3 class="font-medium">Les données collectées sur ce site peuvent inclure :</h3>
         <ul class="list-disc ml-8 mt-4 mb-8">
           <li>Nom</li>
           <li>Adresse électronique (email)</li>
@@ -50,11 +50,11 @@ useHead ({
       </li>
 
       <li class="mb-8">
-        <h3 class="font-normal">Le traitement des données est fondé sur le consentement de l’utilisateur ou sur l’intérêt légitime de Local Vert à traiter les données collectées.</h3>
+        <h3 class="font-medium">Le traitement des données est fondé sur le consentement de l’utilisateur ou sur l’intérêt légitime de Goût local à traiter les données collectées.</h3>
       </li>
 
       <li class="mb-8">      
-        <h3 class="font-normal">Les données collectées sur ce site peuvent être communiquées à :</h3>
+        <h3 class="font-medium">Les données collectées sur ce site peuvent être communiquées à :</h3>
         <ul class="list-disc ml-8 mt-4">
           <li>Prestataires de services techniques</li>
           <li>Partenaires commerciaux</li>
