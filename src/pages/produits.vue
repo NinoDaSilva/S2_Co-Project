@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Hero from '@/components/Hero.vue'
 import CardProduit from '@/components/CardProduit.vue';
+import SearchIcon from '@/components/icons/SearchIcon.vue';
 
 import { FruitsEte } from '@/backend';
 import { FruitsAutomne } from '@/backend';
@@ -8,7 +9,6 @@ import { LegumesEte } from '@/backend';
 import { LegumesAutomne } from '@/backend';
 import { LegumesPrintemps } from '@/backend';
 import { LegumesHiver } from '@/backend';
-import { allProduits } from '@/backend';
 //
 import {useHead} from '@unhead/vue'
 useHead ({
@@ -25,11 +25,18 @@ const legumesHiver = await LegumesHiver();
 </script>
 
 <template>
-      <Hero
+  <Hero
     title="Nos produits"
     imgPath="/img/hero/produits.webp"
     imgAlt="Image bannière page produits"
   >
+    <template #chapo>
+      <div class="relative mt-2 sm:mt-5 lg:mt-10 sm:w-4/6 max-w-[700px] mx-auto">
+        <input type="search" name="produit" id="search" placeholder="Rechercher un produit"
+          class="w-full bg-[#dfdfdf] lg:text-sm rounded-3xl p-2 pl-12 px-5 sm:pl-16 outline-none focus:outline-vert focus:text-brun">
+        <SearchIcon class="absolute top-1.5 left-3 sm:top-3 sm:left-5 w-4 h-5 sm:w-6 sm:h-6" />
+      </div>
+    </template>
   </Hero>
 
   <div class="mt-10 sm:mt-20 max-lg:mx-8 md:mb-28">
