@@ -3,12 +3,7 @@ import Hero from '@/components/Hero.vue'
 import CardProduit from '@/components/CardProduit.vue';
 import SearchIcon from '@/components/icons/SearchIcon.vue';
 
-import { FruitsEte } from '@/backend';
-import { FruitsAutomne } from '@/backend';
-import { LegumesEte } from '@/backend';
-import { LegumesAutomne } from '@/backend';
-import { LegumesPrintemps } from '@/backend';
-import { LegumesHiver } from '@/backend';
+import { FruitsEte, FruitsAutomne, LegumesEte, LegumesAutomne, LegumesPrintemps, LegumesHiver, allProduits } from '@/backend';
 //
 import {useHead} from '@unhead/vue'
 useHead ({
@@ -21,7 +16,7 @@ const legumesEte = await LegumesEte();
 const legumesAutomne = await LegumesAutomne();
 const legumesPrintemps = await LegumesPrintemps();
 const legumesHiver = await LegumesHiver();
-//const produitListe = await allProduits();
+const produitListe = await allProduits();
 </script>
 
 <template>
@@ -82,3 +77,17 @@ const legumesHiver = await LegumesHiver();
     </div>
   </section>
 </template>
+
+<!-- <script>
+const OnSearch = () => {
+  const input = document.querySelector('#search');
+  const filter = input.value.toUpperCase();
+  const list = document.querySelectorAll('produitListe');
+
+  list.forEach((el) => {
+    const text = el.textContent.toUpperCase();
+
+    el.style.display = text.includes(filter) ? '' : 'none';
+  });
+};
+</script> -->
