@@ -46,7 +46,7 @@ export async function FruitsAutomne() {
 
 // Retourne les produits de type "fruit" et de saison "hiver"
 export async function FruitsHiver() {
-    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saiso = "hiver" && type = "fruit"', sort: 'disponible'}) ;
+    const records = await pb.collection('produits').getFullList<ProduitsResponse>({filter: 'saison = "hiver" && type = "fruit"', sort: 'disponible'}) ;
     return records ;
 }    
 
