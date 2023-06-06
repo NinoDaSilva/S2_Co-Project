@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase';
-export const pb = new PocketBase('http://127.0.0.1:8090');
+export const pb = new PocketBase('https://gout-local.nino-da-silva.fr');
 
 import type { EventsResponse, RecettesResponse, ProduitsResponse } from '@/pocketbase-types';
 
@@ -107,6 +107,3 @@ export async function recetteEtapes(titre: string) {
     const records = await pb.collection('recettes').getFirstListItem<RecettesResponse>(`titre = '${titre}'`);
     return records
 }
-
-
-//

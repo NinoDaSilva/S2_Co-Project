@@ -7,7 +7,7 @@ import FooterPage from '@/components/FooterPage.vue'
 // PocketBase vps connection
 var pocketbase_ip=''
 if(import.meta.env.MODE === 'production')
-  pocketbase_ip='http://193.168.145.101:80'
+  pocketbase_ip='https://gout-local.nino-da-silva.fr'
 else
   pocketbase_ip='http://127.0.0.1:8090'
 
