@@ -1,8 +1,8 @@
-<script setup lang="ts">
+<script setup>
+import { ref, computed } from 'vue'
 import Hero from '@/components/Hero.vue'
 import CardProduit from '@/components/CardProduit.vue';
 import SearchIcon from '@/components/icons/SearchIcon.vue';
-import { pb } from '@/backend'
 
 import { FruitsEte, FruitsAutomne, LegumesEte, LegumesAutomne, LegumesPrintemps, LegumesHiver, allProduits } from '@/backend';
 //
@@ -17,10 +17,22 @@ const legumesEte = await LegumesEte();
 const legumesAutomne = await LegumesAutomne();
 const legumesPrintemps = await LegumesPrintemps();
 const legumesHiver = await LegumesHiver();
-const produitListe = await allProduits();
 
 //
+const searchTerm = ref('');
 
+let produits = [];
+produits = await allProduits();
+
+const filterProduits = (searchTerm) => {
+  return produits.filter((produit) => {
+    return produit.name.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+};
+
+const produitsFiltres = computed(() => {
+  return filterProduits(searchTerm.value);
+});
 </script>
 
 <template>
@@ -31,7 +43,7 @@ const produitListe = await allProduits();
   >
     <template #chapo>
       <div class="relative mt-2 sm:mt-5 lg:mt-10 sm:w-4/6 max-w-[700px] mx-auto">
-        <input type="search" name="produit" id="search" value="" onchange="myFunction()" placeholder="Rechercher un produit"
+        <input type="search" name="produit" id="search"  v-model="searchTerm" placeholder="Rechercher un produit"
           class="w-full bg-[#dfdfdf] lg:text-sm rounded-3xl p-2 pl-12 px-5 sm:pl-16 outline-none focus:outline-vert focus:text-brun focus:shadow-2xl duration-150">
         <button type="button" onclick="myFunction()" class="absolute top-1.5 left-3 sm:top-3 sm:left-5 w-4 h-5 sm:w-6 sm:h-6">
           <SearchIcon class="hover:scale-110 ease-in-out duration-300"/>
@@ -39,6 +51,12 @@ const produitListe = await allProduits();
       </div>
     </template>
   </Hero>
+
+  <!-- Affichage selon la recherche -->
+  <div class="grid grid-cols-3 gap-5 p-2 mt-8 max-sm:px-10 md:gap-20 sm:p-10">
+    <CardProduit class="border-bleuClair sm:border-8 max-w-[300px]"
+        v-for="produit in produitsFiltres" :key="produit.id" v-bind="{...produit}"/>
+  </div>
 
   <div class="mt-10 sm:mt-20 max-lg:mx-8 md:mb-28">
     <h2 class="mb-3 sm:mb-6 max-w-3xl">Découvrez et choisissez des produits qui vous intéresse et de saison juste ici !</h2>
