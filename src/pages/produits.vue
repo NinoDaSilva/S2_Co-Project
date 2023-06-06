@@ -18,7 +18,7 @@ const legumesAutomne = await LegumesAutomne();
 const legumesPrintemps = await LegumesPrintemps();
 const legumesHiver = await LegumesHiver();
 
-//
+// Fonction de barre de recherche
 const searchTerm = ref('');
 
 let produits = [];
@@ -33,6 +33,7 @@ const filterProduits = (searchTerm) => {
 const produitsFiltres = computed(() => {
   return filterProduits(searchTerm.value);
 });
+//
 </script>
 
 <template>
@@ -45,7 +46,7 @@ const produitsFiltres = computed(() => {
       <div class="relative mt-2 sm:mt-5 lg:mt-10 sm:w-4/6 max-w-[700px] mx-auto">
         <input type="search" name="produit" id="search"  v-model="searchTerm" placeholder="Rechercher un produit"
           class="w-full bg-[#dfdfdf] lg:text-sm rounded-3xl p-2 pl-12 px-5 sm:pl-16 outline-none focus:outline-vert focus:text-brun focus:shadow-2xl duration-150">
-        <button type="button" onclick="myFunction()" class="absolute top-1.5 left-3 sm:top-3 sm:left-5 w-4 h-5 sm:w-6 sm:h-6">
+        <button type="button" onclick="filterProduits()" class="absolute top-1.5 left-3 sm:top-3 sm:left-5 w-4 h-5 sm:w-6 sm:h-6">
           <SearchIcon class="hover:scale-110 ease-in-out duration-300"/>
         </button>
       </div>
@@ -53,7 +54,7 @@ const produitsFiltres = computed(() => {
   </Hero>
 
   <!-- Affichage selon la recherche -->
-  <div class="grid grid-cols-3 gap-5 p-2 mt-8 max-sm:px-10 md:gap-20 sm:p-10">
+  <div v-if="searchTerm !== ''" class="grid grid-cols-3 gap-5 p-2 mt-8 max-sm:px-10 md:gap-20 sm:p-10">
     <CardProduit class="border-bleuClair sm:border-8 max-w-[300px]"
         v-for="produit in produitsFiltres" :key="produit.id" v-bind="{...produit}"/>
   </div>
