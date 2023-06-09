@@ -1,6 +1,8 @@
 # Goût Local
 
-Projet collectif (fictif) composé de Lucas CHIPPAUX, Nino DA SILVA et Faris HALEPOVIC. 
+Projet collectif composé de Lucas CHIPPAUX, Nino DA SILVA et Faris HALEPOVIC. 
+
+Ce projet est un projet universitaire fictif réalisé dans le cadre de nos études au département MMI Montbéliard.
 
 
 # Présentation du projet
