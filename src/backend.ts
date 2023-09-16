@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase';
-export const pb = new PocketBase('https://gout-local.nino-da-silva.fr');
+export const pb = new PocketBase('https://gout-local.pockethost.io/');
 
 import type { EventsResponse, RecettesResponse, ProduitsResponse } from '@/pocketbase-types';
 
